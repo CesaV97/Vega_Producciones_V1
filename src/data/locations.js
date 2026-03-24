@@ -18,7 +18,7 @@ export const locations = [
     name: 'Área Central de Fundidora',
     types: ['quinceanera'],
     category: 'Quinceañeras · Editorial',
-    coverImage: '/photo-yami.jpg',
+    coverImage: CL('L1Q1_ln2zsu'),
     characteristics: [
       'Amplio espacio al aire libre con jardines y áreas verdes',
       'Zona de lago con reflejos naturales ideales para fotos',
@@ -49,7 +49,7 @@ export const locations = [
     name: 'Locación Exterior con Caballos',
     types: ['quinceanera'],
     category: 'Quinceañeras · Editorial',
-    coverImage: '/photo-ale.jpg',
+    coverImage: CL('L1Q2_szhrlw'),
     characteristics: [
       'Campo abierto con vegetación natural',
       'Caballos disponibles como elemento escénico',
@@ -80,7 +80,7 @@ export const locations = [
     name: 'Salón Clásico Quinceañera',
     types: ['quinceanera'],
     category: 'Quinceañeras',
-    coverImage: '/photo-jase.jpg',
+    coverImage: CL('L1Q3_g5bnty'),
     characteristics: [
       'Candelabro central de cristal de 3 metros',
       'Decoración clásica con muebles de época',
@@ -111,7 +111,7 @@ export const locations = [
     name: 'Hacienda Real',
     types: ['boda'],
     category: 'Bodas',
-    coverImage: '/photo-aa.jpg',
+    coverImage: CL('L1B1_g4t9kq'),
     characteristics: [
       'Escalinata principal con decoración floral espectacular',
       'Salón con altura de 6 metros y candelabros de cristal',
@@ -141,7 +141,7 @@ export const locations = [
     name: 'Salón Clásico con Piano',
     types: ['boda'],
     category: 'Bodas · Editorial',
-    coverImage: '/photo-ek.jpg',
+    coverImage: CL('L1B2_iwwrtm'),
     characteristics: [
       'Piano de cola como elemento central de composición',
       'Piso de mármol blanco y negro en damero',
@@ -171,7 +171,7 @@ export const locations = [
     name: 'Escalinata Jardín & Flores',
     types: ['boda'],
     category: 'Bodas',
-    coverImage: '/photo-ec.jpg',
+    coverImage: CL('L1B3_qldrmm'),
     characteristics: [
       'Escalinata decorada con flores naturales de temporada',
       'Luz natural cenital que ilumina el vestido',

@@ -9,7 +9,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/photo-ec.jpg');
+  background-image: url('https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/L1B2_iwwrtm');
   background-size: cover;
   background-position: center 30%;
   opacity: 0.055;
