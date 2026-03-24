@@ -1,0 +1,148 @@
+/* ═══════════════════════════════════════════════
+   LOCATIONS SECTION
+   ═══════════════════════════════════════════════ */
+.locations {
+  background: var(--bg-3);
+  position: relative;
+}
+
+.locations__header {
+  margin-bottom: 40px;
+}
+
+/* línea separadora bajo el header */
+.locations__divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 48px;
+}
+
+/* espacio entre los dos carruseles */
+.locations__separator {
+  height: 1px;
+  background: var(--border);
+  margin: 56px 0;
+}
+
+/* ── Tarjeta (ya no usada en grid, se mantiene por compatibilidad) */
+.loc-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.loc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* imagen de portada */
+.loc-card__img-wrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.loc-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.55s ease;
+}
+
+.loc-card:hover .loc-card__img-wrap img {
+  transform: scale(1.05);
+}
+
+.loc-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,20,14,0.3) 0%, transparent 50%);
+}
+
+/* cuerpo de la tarjeta */
+.loc-card__body {
+  padding: 24px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.loc-card__category {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.loc-card__name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: var(--text-1);
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.loc-card__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.loc-card__features li {
+  font-size: 13px;
+  color: var(--text-3);
+  line-height: 1.45;
+  padding-left: 16px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loc-card__features li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 11px;
+}
+
+.loc-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  background: none;
+  border: none;
+  padding: 0;
+  transition: gap 0.2s;
+  font-family: var(--font);
+}
+
+.loc-card__cta:hover { gap: 10px; }
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 768px) {
+  .locations__grid { grid-template-columns: 1fr; }
+}

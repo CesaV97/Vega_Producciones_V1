@@ -1,0 +1,252 @@
+/* ═══════════════════════════════════════════════
+   LOCATION CAROUSEL
+   ═══════════════════════════════════════════════ */
+.lcarousel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Encabezado ──────────────────────────────── */
+.lcarousel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.lcarousel__head-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lcarousel__icon {
+  font-size: 32px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.lcarousel__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2px;
+}
+
+.lcarousel__title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--text-1);
+  line-height: 1.1;
+}
+
+/* flechas */
+.lcarousel__arrows {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.lcarousel__arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-dark);
+  background: var(--bg);
+  color: var(--text-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.lcarousel__arrow:hover:not(:disabled) {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+  box-shadow: 0 4px 16px var(--gold-glow);
+  transform: scale(1.05);
+}
+
+.lcarousel__arrow--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ── Track ───────────────────────────────────── */
+.lcarousel__wrap {
+  overflow: hidden;
+  /* fade-out edges izquierda y derecha */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 3%,
+    black 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 3%,
+    black 94%,
+    transparent 100%
+  );
+}
+
+.lcarousel__track {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Tarjeta ─────────────────────────────────── */
+.lcarousel__card {
+  flex-shrink: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.lcarousel__card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* imagen */
+.lcarousel__img {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lcarousel__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s ease;
+}
+
+.lcarousel__card:hover .lcarousel__img img {
+  transform: scale(1.05);
+}
+
+.lcarousel__img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,20,14,0.25) 0%, transparent 50%);
+}
+
+/* cuerpo */
+.lcarousel__body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.lcarousel__cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.lcarousel__name {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: var(--text-1);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.lcarousel__feats {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.lcarousel__feats li {
+  font-size: 12px;
+  color: var(--text-3);
+  line-height: 1.4;
+  padding-left: 14px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lcarousel__feats li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 10px;
+}
+
+.lcarousel__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font);
+  transition: gap 0.2s;
+}
+
+.lcarousel__cta:hover { gap: 8px; }
+
+/* ── Dots ────────────────────────────────────── */
+.lcarousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.lcarousel__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-dark);
+  background: transparent;
+  transition: all 0.25s;
+  padding: 0;
+}
+
+.lcarousel__dot--active {
+  background: var(--gold);
+  border-color: var(--gold);
+  width: 20px;
+  border-radius: 4px;
+}
+
+.lcarousel__dot:hover:not(.lcarousel__dot--active) {
+  background: var(--border-dark);
+}

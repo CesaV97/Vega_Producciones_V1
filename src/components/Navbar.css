@@ -1,0 +1,159 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0;
+  /* anima TODO al hacer scroll: fondo, sombra y altura */
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.navbar--scrolled {
+  background: rgba(250, 248, 245, 0.92);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0 1px 0 rgba(90,70,50,0.09);
+}
+
+/* ── Inner — anima la altura ── */
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 160px;
+  transition: height 0.4s ease;   /* ← clave para la animación */
+}
+
+.navbar--scrolled .navbar__inner {
+  height: 68px;                    /* altura compacta al hacer scroll */
+}
+
+/* ── Logo — anima el tamaño ── */
+.navbar__logo img {
+  height: 150px;
+  width: auto;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,0.4));
+  transition: filter 0.4s ease, height 0.4s ease;
+}
+
+.navbar--scrolled .navbar__logo img {
+  filter: brightness(0);
+  height: 50px;                    /* logo compacto al hacer scroll */
+}
+
+/* ── Links ── */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.navbar__link {
+  /* ── Tamaño en el Hero (inicio) ──────────────────────
+     Cambia font-size para hacerlas más o menos grandes.
+     Cambia font-weight: 300=delgada 400=normal 500=media 600=semi 700=bold
+     Cambia letter-spacing para más o menos separación entre letras
+  ──────────────────────────────────────────────────── */
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.45);
+  transition: color 0.2s, font-size 0.4s ease, letter-spacing 0.4s ease;
+}
+
+.navbar__link:hover {
+  color: #ffffff;
+}
+
+/* ── Tamaño al hacer scroll (compacto) ───────────────
+   Estas propiedades se aplican cuando el usuario baja.
+   Ajusta igual: font-size, font-weight, letter-spacing
+────────────────────────────────────────────────────── */
+.navbar--scrolled .navbar__link {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: var(--text-2);
+  text-shadow: none;
+}
+
+.navbar--scrolled .navbar__link:hover {
+  color: var(--text-1);
+}
+
+/* ── CTA button ── */
+.navbar__cta {
+  padding: 9px 20px;
+  font-size: 13px;
+  /* outline blanco sobre hero */
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.75);
+  color: #fff;
+  box-shadow: none;
+}
+
+.navbar__cta:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: #fff;
+  transform: none;
+  box-shadow: none;
+}
+
+/* sólido azul al hacer scroll */
+.navbar--scrolled .navbar__cta {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  box-shadow: 0 2px 12px var(--blue-glow);
+}
+
+.navbar--scrolled .navbar__cta:hover {
+  background: var(--blue-hover);
+  transform: scale(1.02);
+}
+
+/* ── Burger ── */
+.navbar__burger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;           /* blanco sobre hero */
+  margin-left: auto;
+  padding: 8px;
+  transition: color 0.35s;
+}
+
+.navbar--scrolled .navbar__burger {
+  color: var(--text-1);
+}
+
+.navbar__mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 24px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
+}
+
+.navbar__mobile-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-1);
+}
+
+@media (max-width: 860px) {
+  .navbar__links, .navbar__cta { display: none; }
+  .navbar__burger { display: block; }
+}

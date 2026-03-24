@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ── Azul de marca ── */
+  --blue:       #1A56DB;
+  --blue-hover: #1648C0;
+  --blue-light: #EEF2FF;
+  --blue-glow:  rgba(26, 86, 219, 0.18);
+
+  /* ── Dorado elegante — acento editorial ── */
+  --gold:       #B8963E;
+  --gold-light: #F8F1E0;
+  --gold-glow:  rgba(184, 150, 62, 0.2);
+
+  /* ── Fondos crema cálida ── */
+  --bg:         #FAF8F5;   /* crema principal */
+  --bg-2:       #F2EDE5;   /* crema más profunda */
+  --bg-3:       #FDF9F6;   /* casi blanco cálido */
+  --surface:    rgba(250, 248, 245, 0.88);
+  --border:     rgba(90, 70, 50, 0.09);
+  --border-dark:rgba(90, 70, 50, 0.16);
+
+  /* ── Texto cálido (no frío gris Apple) ── */
+  --text-1:     #1A1714;   /* casi negro cálido */
+  --text-2:     #3A3028;
+  --text-3:     #7A6E65;
+  --text-4:     #ADA49C;
+
+  /* ── Tipografía ── */
+  --font:         'Inter', -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;  /* elegante para títulos */
+
+  /* ── Geometría ── */
+  --radius-sm:  10px;
+  --radius-md:  18px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+
+  /* ── Sombras cálidas ── */
+  --shadow-sm:  0 2px 10px rgba(90,60,30,0.07);
+  --shadow-md:  0 8px 32px rgba(90,60,30,0.10);
+  --shadow-lg:  0 24px 64px rgba(90,60,30,0.13);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-1);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font); }
+section { padding: 100px 0; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Labels — dorado editorial ─────────────────── */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* ── Títulos — fuente display elegante ─────────── */
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  color: var(--text-1);
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: var(--text-3);
+  line-height: 1.75;
+  max-width: 540px;
+  font-weight: 400;
+}
+
+/* ── Botón primario — azul de marca ────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 13px 26px;
+  border-radius: 980px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--blue-hover);
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px var(--blue-glow);
+}
+
+/* ── Botón outline ──────────────────────────────── */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: var(--text-1);
+  border: 1.5px solid var(--border-dark);
+  padding: 13px 26px;
+  border-radius: 980px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: var(--bg-2);
+  border-color: var(--text-3);
+  transform: scale(1.02);
+}
+
+/* ── Scrollbar ──────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-2); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
