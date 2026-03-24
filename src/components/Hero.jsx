@@ -3,13 +3,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import './Hero.css';
 
+// Cloudinary base — f_auto convierte al formato óptimo (webp/avif),
+// q_auto ajusta la calidad automáticamente según el dispositivo.
+const CL = (path) =>
+  `https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/${path}`;
+
 const slides = [
-  { src: '/photo-yami.jpg',  category: 'Fotografía de', title: 'Quinceañera', pos: 'center top'  },
-  { src: '/photo-aa.jpg',    category: 'Fotografía de', title: 'Boda',        pos: 'center top'  },
-  { src: '/photo-ec.jpg',    category: 'Fotografía de', title: 'Boda',        pos: 'center top'  },
-  { src: '/photo-ek.jpg',    category: 'Fotografía de', title: 'Boda',        pos: 'center top'  },
-  { src: '/photo-jase.jpg',  category: 'Fotografía de', title: 'Quinceañera', pos: 'center top'  },
-  { src: '/photo-ale.jpg',   category: 'Fotografía de', title: 'Quinceañera', pos: 'center top'  },
+  { src: CL('L1Q1_ln2zsu'), category: 'Fotografía de', title: 'Quinceañera' },
+  { src: CL('L1Q2_szhrlw'), category: 'Fotografía de', title: 'Quinceañera' },
+  { src: CL('L1Q3_g5bnty'), category: 'Fotografía de', title: 'Quinceañera' },
+  { src: CL('L2Q1_nlbgve'), category: 'Fotografía de', title: 'Quinceañera' },
+  { src: CL('L1B1_g4t9kq'), category: 'Fotografía de', title: 'Boda'        },
+  { src: CL('L1B2_iwwrtm'), category: 'Fotografía de', title: 'Boda'        },
+  { src: CL('L1B3_qldrmm'), category: 'Fotografía de', title: 'Boda'        },
 ];
 
 const INTERVAL = 3000;

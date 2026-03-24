@@ -2,7 +2,16 @@
  * DATOS DE LOCACIONES — editable
  * types: ['quinceanera'] | ['boda'] | ['quinceanera','boda']
  * Agrega el tipo correcto para que aparezca en el carrusel adecuado.
+ *
+ * CLOUDINARY — para usar URLs de Cloudinary en coverImage y gallery:
+ *   const CL = (id) => `https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/${id}`;
+ *   coverImage: CL('nombre_public_id'),
+ *   gallery: [ CL('foto1'), CL('foto2'), ... ]
  */
+
+// Helper para construir URLs de Cloudinary con optimización automática
+const CL = (id) =>
+  `https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/${id}`;
 export const locations = [
   {
     id: 'fundidora',
@@ -28,7 +37,12 @@ export const locations = [
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.2849!3d25.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000001%3A0x1!2sParque+Fundidora%2C+Monterrey!5e0!3m2!1ses!2smx!4v1680000000000',
     mapAddress: 'Av. Fundidora S/N, Obrera, Monterrey, N.L., México',
-    gallery: ['/photo-yami.jpg', '/photo-jase.jpg', '/photo-ale.jpg', '/photo-ec.jpg'],
+    gallery: [
+      CL('L1Q1_ln2zsu'),   // TODO: reemplaza con fotos de esta locación
+      CL('L1Q2_szhrlw'),
+      CL('L1Q3_g5bnty'),
+      CL('L2Q1_nlbgve'),
+    ],
   },
   {
     id: 'locacion-exterior',
@@ -54,7 +68,12 @@ export const locations = [
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.3249!3d25.6485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000004%3A0x4!2sNuevo+Le%C3%B3n%2C+M%C3%A9xico!5e0!3m2!1ses!2smx!4v1680000000003',
     mapAddress: 'Área Metropolitana de Monterrey, N.L., México',
-    gallery: ['/photo-ale.jpg', '/photo-yami.jpg', '/photo-jase.jpg', '/photo-ec.jpg'],
+    gallery: [
+      CL('L2Q1_nlbgve'),   // TODO: reemplaza con fotos de esta locación
+      CL('L1Q1_ln2zsu'),
+      CL('L1Q2_szhrlw'),
+      CL('L1Q3_g5bnty'),
+    ],
   },
   {
     id: 'salon-quinceanera',
@@ -79,7 +98,12 @@ export const locations = [
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.2949!3d25.6685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000003%3A0x3!2sMonterrey%2C+N.L.!5e0!3m2!1ses!2smx!4v1680000000002',
     mapAddress: 'Monterrey, Nuevo León, México',
-    gallery: ['/photo-jase.jpg', '/photo-yami.jpg', '/photo-ale.jpg', '/photo-ec.jpg'],
+    gallery: [
+      CL('L1Q3_g5bnty'),   // TODO: reemplaza con fotos de esta locación
+      CL('L1Q1_ln2zsu'),
+      CL('L1Q2_szhrlw'),
+      CL('L2Q1_nlbgve'),
+    ],
   },
   // ─── BODAS ────────────────────────────────────────
   {
@@ -105,7 +129,12 @@ export const locations = [
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.3149!3d25.6585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000002%3A0x2!2sMonterrey%2C+N.L.!5e0!3m2!1ses!2smx!4v1680000000001',
     mapAddress: 'Monterrey, Nuevo León, México',
-    gallery: ['/photo-aa.jpg', '/photo-ec.jpg', '/photo-ek.jpg', '/photo-aa.jpg'],
+    gallery: [
+      CL('L1B1_g4t9kq'),   // TODO: reemplaza con fotos de esta locación
+      CL('L1B2_iwwrtm'),
+      CL('L1B3_qldrmm'),
+      CL('L1Q1_ln2zsu'),
+    ],
   },
   {
     id: 'salon-clasico',
@@ -130,7 +159,12 @@ export const locations = [
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.2949!3d25.6685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000003%3A0x3!2sMonterrey%2C+N.L.!5e0!3m2!1ses!2smx!4v1680000000002',
     mapAddress: 'Monterrey, Nuevo León, México',
-    gallery: ['/photo-ek.jpg', '/photo-aa.jpg', '/photo-ec.jpg', '/photo-ale.jpg'],
+    gallery: [
+      CL('L1B3_qldrmm'),   // TODO: reemplaza con fotos de esta locación
+      CL('L1B1_g4t9kq'),
+      CL('L1B2_iwwrtm'),
+      CL('L2Q1_nlbgve'),
+    ],
   },
   {
     id: 'boda-escalinata',
@@ -155,7 +189,12 @@ export const locations = [
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.3049!3d25.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000005%3A0x5!2sMonterrey%2C+N.L.!5e0!3m2!1ses!2smx!4v1680000000004',
     mapAddress: 'Monterrey, Nuevo León, México',
-    gallery: ['/photo-ec.jpg', '/photo-aa.jpg', '/photo-ek.jpg', '/photo-ale.jpg'],
+    gallery: [
+      CL('L1B2_iwwrtm'),   // TODO: reemplaza con fotos de esta locación
+      CL('L1B1_g4t9kq'),
+      CL('L1B3_qldrmm'),
+      CL('L1Q2_szhrlw'),
+    ],
   },
    // ─── PLANTILLA VACÍA — llena los campos marcados con TODO ───────────
   {
@@ -163,7 +202,7 @@ export const locations = [
     name: '',                                      // TODO: nombre del lugar
     types: ['quinceanera'],                        // TODO: ['quinceanera'] | ['boda'] | ['quinceanera','boda']
     category: '',                                  // TODO: ej. "Quinceañeras · Bodas"
-    coverImage: '/photo-aa.jpg',                   // TODO: ruta de la foto de portada
+    coverImage: CL(''),                            // TODO: pon el public_id de Cloudinary
     characteristics: [
       '',                                          // TODO: característica 1
       '',                                          // TODO: característica 2
@@ -176,10 +215,10 @@ export const locations = [
     mapEmbedUrl: '',                               // TODO: pega aquí el src del iframe de Google Maps
     mapAddress: '',                                // TODO: dirección completa legible
     gallery: [
-      '/photo-aa.jpg',                             // TODO: foto 1
-      '/photo-aa.jpg',                             // TODO: foto 2
-      '/photo-aa.jpg',                             // TODO: foto 3
-      '/photo-aa.jpg',                             // TODO: foto 4
+      CL(''),              // TODO: public_id foto 1
+      CL(''),              // TODO: public_id foto 2
+      CL(''),              // TODO: public_id foto 3
+      CL(''),              // TODO: public_id foto 4
     ],
   },
   // ─────────────────────────────────────────────────────────────────────
