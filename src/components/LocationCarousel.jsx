@@ -27,11 +27,9 @@ export default function LocationCarousel({ title, icon, locations, onSelect }) {
 
   const visible   = Math.round((wrapRef.current?.offsetWidth || 1060) / (cardW + GAP));
   const maxIndex  = Math.max(0, locations.length - visible);
-  const canPrev   = index > 0;
-  const canNext   = index < maxIndex;
 
-  const prev = () => setIndex(i => Math.max(0, i - 1));
-  const next = () => setIndex(i => Math.min(maxIndex, i + 1));
+  const prev = () => setIndex(i => (i - 1 + maxIndex + 1) % (maxIndex + 1));
+  const next = () => setIndex(i => (i + 1) % (maxIndex + 1));
 
   const translateX = index * (cardW + GAP);
 
@@ -50,17 +48,15 @@ export default function LocationCarousel({ title, icon, locations, onSelect }) {
         {/* flechas */}
         <div className="lcarousel__arrows">
           <button
-            className={`lcarousel__arrow ${!canPrev ? 'lcarousel__arrow--disabled' : ''}`}
+            className="lcarousel__arrow"
             onClick={prev}
-            disabled={!canPrev}
             aria-label="Anterior"
           >
             <ChevronLeft size={20} />
           </button>
           <button
-            className={`lcarousel__arrow ${!canNext ? 'lcarousel__arrow--disabled' : ''}`}
+            className="lcarousel__arrow"
             onClick={next}
-            disabled={!canNext}
             aria-label="Siguiente"
           >
             <ChevronRight size={20} />

@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "category": "Fotografía",
+    "name": "Paquete Esencial",
+    "detail": [
+      "Sesión de 1 hora en estudio",
+      "10 fotos editadas",
+      "Entrega en 3 días hábiles"
+    ],
+    "price": "$1,500 MXN"
+  },
+  {
+    "id": 2,
+    "category": "Fotografía",
+    "name": "Paquete Premium",
+    "detail": [
+      "Sesión de 2 horas",
+      "25 fotos editadas",
+      "Cambio de look incluido",
+      "Entrega en 5 días"
+    ],
+    "price": "$2,800 MXN"
+  },
+  {
+    "id": 3,
+    "category": "Video",
+    "name": "Reel Básico",
+    "detail": [
+      "1 minuto de contenido editado",
+      "Optimizado para redes sociales",
+      "Música incluida"
+    ],
+    "price": "$2,000 MXN"
+  },
+  {
+    "id": 4,
+    "category": "Video",
+    "name": "Producción Completa",
+    "detail": [
+      "Video hasta 5 minutos",
+      "Guion y dirección",
+      "Edición profesional",
+      "Motion graphics"
+    ],
+    "price": "$5,500 MXN"
+  },
+  {
+    "id": 5,
+    "category": "Estudio",
+    "name": "Renta por Hora",
+    "detail": [
+      "Ciclorama profesional",
+      "Iluminación completa",
+      "Sala de maquillaje"
+    ],
+    "price": "$600 MXN/hr"
+  },
+  {
+    "id": 6,
+    "category": "Estudio",
+    "name": "Renta Medio Día",
+    "detail": [
+      "4 horas de estudio",
+      "Asistente incluido",
+      "Equipo de audio"
+    ],
+    "price": "$2,000 MXN"
+  }
+]

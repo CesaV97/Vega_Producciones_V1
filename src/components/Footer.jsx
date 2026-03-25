@@ -22,7 +22,6 @@ export default function Footer() {
         <div className="footer__links">
           <h4>Empresa</h4>
           <a href="#about">Nosotros</a>
-          <a href="#portfolio">Portafolio</a>
           <a href="#contact">Contacto</a>
         </div>
 

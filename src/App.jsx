@@ -4,9 +4,9 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
 import Locations from './components/Locations';
-import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   return (
@@ -16,9 +16,9 @@ export default function App() {
       <Locations />
       <Services />
       <About />
-      <Portfolio />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

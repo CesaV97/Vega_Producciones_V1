@@ -6,10 +6,9 @@ import './Navbar.css';
 const links = [
   { label: 'Inicio',     href: '#hero'      },
   { label: 'Locaciones', href: '#locations' },
-  { label: 'Servicios',  href: '#services'  },
-  { label: 'Nosotros',   href: '#about'     },
-  { label: 'Portafolio', href: '#portfolio' },
-  { label: 'Contacto',   href: '#contact'   },
+  { label: 'Paquetes',   href: '#services'  },
+  { label: 'Nosotros',   href: '#about'        },
+  { label: 'Contacto',   href: '#contact'      },
 ];
 
 export default function Navbar() {

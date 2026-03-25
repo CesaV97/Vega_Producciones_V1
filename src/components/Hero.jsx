@@ -9,10 +9,10 @@ const CL = (path) =>
   `https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/${path}`;
 
 const slides = [
-  { src: CL('L1Q1_ln2zsu'), category: 'Fotografía de', title: 'Quinceañera' },
-  { src: CL('L1Q2_szhrlw'), category: 'Fotografía de', title: 'Quinceañera' },
-  { src: CL('L1Q3_g5bnty'), category: 'Fotografía de', title: 'Quinceañera' },
-  { src: CL('L2Q1_nlbgve'), category: 'Fotografía de', title: 'Quinceañera' },
+  { src: CL('L1Q1_ln2zsu'), category: 'Fotografía de', title: 'XV Años' },
+  { src: CL('L1Q2_szhrlw'), category: 'Fotografía de', title: 'XV Años' },
+  { src: CL('L1Q3_g5bnty'), category: 'Fotografía de', title: 'XV Años' },
+  { src: CL('L2Q1_nlbgve'), category: 'Fotografía de', title: 'XV Años' },
   { src: CL('L1B1_g4t9kq'), category: 'Fotografía de', title: 'Boda'        },
   { src: CL('L1B2_iwwrtm'), category: 'Fotografía de', title: 'Boda'        },
   { src: CL('L1B3_qldrmm'), category: 'Fotografía de', title: 'Boda'        },
@@ -87,10 +87,16 @@ export default function Hero() {
               Sesiones profesionales que capturan la emoción,
               la elegancia y los detalles únicos de tu momento especial.
             </p>
-            <a href="#contact" className="hero__cta">
-              Ver opciones y precios
-              <ArrowRight size={15} />
-            </a>
+            <div className="hero__actions">
+              <a href="#services" className="hero__cta">
+                Ver opciones y precios
+                <ArrowRight size={15} />
+              </a>
+              <a href="#locations" className="hero__cta hero__cta--ghost">
+                Ver locaciones
+                <ArrowRight size={15} />
+              </a>
+            </div>
           </motion.div>
         </AnimatePresence>
       </div>
