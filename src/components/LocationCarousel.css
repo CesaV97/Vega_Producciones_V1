@@ -250,3 +250,40 @@
 .lcarousel__dot:hover:not(.lcarousel__dot--active) {
   background: var(--border-dark);
 }
+
+@media (max-width: 768px) {
+  .lcarousel__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .lcarousel__arrows {
+    align-self: flex-end;
+  }
+
+  .lcarousel__icon {
+    font-size: 24px;
+  }
+
+  .lcarousel__body {
+    padding: 14px 16px 18px;
+  }
+
+  /* quitar fade lateral en móvil para no cortar las tarjetas */
+  .lcarousel__wrap {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .lcarousel__arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .lcarousel__name {
+    font-size: 16px;
+  }
+}

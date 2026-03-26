@@ -27,6 +27,8 @@
   align-items: center;
   gap: 0;
   height: 160px;
+  max-width: 100%;
+  padding-right: 100px;
   transition: height 0.4s ease;   /* ← clave para la animación */
 }
 
@@ -53,7 +55,6 @@
   align-items: center;
   gap: 28px;
   margin-left: auto;
-  margin-right: 24px;
 }
 
 .navbar__link {
@@ -62,13 +63,14 @@
      Cambia font-weight: 300=delgada 400=normal 500=media 600=semi 700=bold
      Cambia letter-spacing para más o menos separación entre letras
   ──────────────────────────────────────────────────── */
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.3px;
   color: rgba(255, 255, 255, 0.92);
   text-shadow: 0 1px 6px rgba(0,0,0,0.45);
   transition: color 0.2s, font-size 0.4s ease, letter-spacing 0.4s ease;
   position: relative;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* subrayado animado sobre el hero */
@@ -192,4 +194,31 @@
 @media (max-width: 860px) {
   .navbar__links, .navbar__cta { display: none; }
   .navbar__burger { display: block; }
+
+  .navbar__inner {
+    height: 90px;
+    padding-right: 16px;
+  }
+
+  .navbar--scrolled .navbar__inner {
+    height: 60px;
+  }
+
+  .navbar__logo img {
+    height: 75px;
+  }
+
+  .navbar--scrolled .navbar__logo img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__inner {
+    height: 70px;
+  }
+
+  .navbar__logo img {
+    height: 58px;
+  }
 }

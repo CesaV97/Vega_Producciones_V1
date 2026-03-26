@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
@@ -25,7 +25,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         <a href="#hero" className="navbar__logo">
-          <img src="/logo-vega.png" alt="Vega Producciones" />
+          <img src="https://res.cloudinary.com/dv22lqbsr/image/upload/v1774403367/LOGO-vega_mzbduw.png" alt="Vega Producciones" />
         </a>
 
         <nav className="navbar__links">
@@ -35,11 +35,6 @@ export default function Navbar() {
             </a>
           ))}
         </nav>
-
-        <a href="tel:+1234567890" className="btn-primary navbar__cta">
-          <Phone size={16} />
-          Llámanos
-        </a>
 
         <button
           className="navbar__burger"
@@ -69,10 +64,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="tel:+52 8180790057" className="btn-primary" style={{ marginTop: 8 }}>
-              <Phone size={16} />
-              Llámanos
-            </a>
+
           </motion.div>
         )}
       </AnimatePresence>

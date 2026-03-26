@@ -17,31 +17,38 @@ export const locations = [
     id: 'fundidora',
     name: 'Área Central de Fundidora',
     types: ['quinceanera'],
-    category: 'Quinceañeras · Editorial',
-    coverImage: CL('L1Q1_ln2zsu'),
+    category: 'Quinceañeras',
+    coverImage: CL('empty_zlbisz'),
     characteristics: [
-      'Amplio espacio al aire libre con jardines y áreas verdes',
-      'Zona de lago con reflejos naturales ideales para fotos',
-      'Arquitectura industrial reconvertida como fondo único',
-      'Luz natural espectacular en horas doradas',
-      'Estacionamiento disponible en el área',
-      'Acceso libre y apto para grupos grandes',
+      'Exterior',
+      'Jardín', 
+      'Gratuito',
+      'No se permiten globos, polvos, bombas de humo',
     ],
     recommendations:
-      'El Parque Fundidora es uno de los escenarios más versátiles e icónicos de Monterrey. ' +
-      'Recomendamos llegar entre 6:30–8:00 am para aprovechar la luz dorada matutina sin aglomeraciones, ' +
-      'o bien entre 5:00–7:00 pm para la hora mágica del atardecer con las montañas de fondo. ' +
-      'Los fines de semana pueden tener más afluencia; coordinar permisos con anticipación es ideal ' +
-      'para sesiones de más de 5 personas. Traer zapatos cómodos es importante ya que la sesión ' +
-      'puede recorrer varios puntos del parque.',
+      'El punto de encuentro más accesible la pista de Hielo Fundidora (Entrada E6) \n'+
+      'Baños cerca.\n' + 
+      'Llevar zapatos cómodos.\n' + 
+      'La mayoría lleva short y top facil de quitar y poner cuando llevan cambios de ropa. ',
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.2849!3d25.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000001%3A0x1!2sParque+Fundidora%2C+Monterrey!5e0!3m2!1ses!2smx!4v1680000000000',
     mapAddress: 'Av. Fundidora S/N, Obrera, Monterrey, N.L., México',
     gallery: [
-      CL('L1Q1_ln2zsu'),   // TODO: reemplaza con fotos de esta locación
-      CL('L1Q2_szhrlw'),
-      CL('L1Q3_g5bnty'),
-      CL('L2Q1_nlbgve'),
+      CL('empty_zlbisz'),   // TODO: reemplaza con fotos de esta locación
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
     ],
   },
   {
@@ -49,7 +56,7 @@ export const locations = [
     name: 'Locación Exterior con Caballos',
     types: ['quinceanera'],
     category: 'Quinceañeras · Editorial',
-    coverImage: CL('L1Q2_szhrlw'),
+    coverImage: CL('empty_zlbisz'),
     characteristics: [
       'Campo abierto con vegetación natural',
       'Caballos disponibles como elemento escénico',
@@ -69,10 +76,21 @@ export const locations = [
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.3249!3d25.6485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000004%3A0x4!2sNuevo+Le%C3%B3n%2C+M%C3%A9xico!5e0!3m2!1ses!2smx!4v1680000000003',
     mapAddress: 'Área Metropolitana de Monterrey, N.L., México',
     gallery: [
-      CL('L2Q1_nlbgve'),   // TODO: reemplaza con fotos de esta locación
-      CL('L1Q1_ln2zsu'),
-      CL('L1Q2_szhrlw'),
-      CL('L1Q3_g5bnty'),
+      CL('empty_zlbisz'),   // TODO: reemplaza con fotos de esta locación
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
+      CL('empty_zlbisz'),
     ],
   },
   {

@@ -40,7 +40,7 @@ export default function LocationCarousel({ title, icon, locations, onSelect }) {
         <div className="lcarousel__head-left">
           <span className="lcarousel__icon">{icon}</span>
           <div>
-            <p className="lcarousel__label">Locaciones para</p>
+            {/*<p className="lcarousel__label">Locaciones para</p>*/}
             <h3 className="lcarousel__title">{title}</h3>
           </div>
         </div>

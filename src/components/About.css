@@ -140,6 +140,13 @@
 @media (max-width: 900px) {
   .about__inner { grid-template-columns: 1fr; gap: 48px; }
   .about__badge { right: 12px; }
-  .about__image { aspect-ratio: 16/9; }
+  .about__image { aspect-ratio: 3/2; }
   .about__reviews-scroll { max-height: 240px; }
+}
+
+@media (max-width: 480px) {
+  .about__image { aspect-ratio: 4/3; }
+  .about__badge { right: 8px; bottom: 16px; padding: 10px 14px; }
+  .about__badge-num { font-size: 20px; }
+  .about__reviews-scroll { max-height: 200px; }
 }

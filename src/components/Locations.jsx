@@ -33,21 +33,9 @@ export default function Locations() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Elige el escenario
-              <br />perfecto para ti
+              Elige el escenario perfecto para ti
             </motion.h2>
-            <motion.p
-              className="section-subtitle"
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              Seleccionamos cada locación pensando en la magia de tu sesión.
-              Explora características, recomendaciones y galería de cada lugar.
-            </motion.p>
           </div>
-
           {/* divider */}
           <div className="locations__divider" />
 

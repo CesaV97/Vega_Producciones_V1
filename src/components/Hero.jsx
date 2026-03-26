@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import './Hero.css';
 
@@ -9,16 +9,16 @@ const CL = (path) =>
   `https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/${path}`;
 
 const slides = [
-  { src: CL('L1Q1_ln2zsu'), category: 'Fotografía de', title: 'XV Años' },
-  { src: CL('L1Q2_szhrlw'), category: 'Fotografía de', title: 'XV Años' },
-  { src: CL('L1Q3_g5bnty'), category: 'Fotografía de', title: 'XV Años' },
-  { src: CL('L2Q1_nlbgve'), category: 'Fotografía de', title: 'XV Años' },
-  { src: CL('L1B1_g4t9kq'), category: 'Fotografía de', title: 'Boda'        },
-  { src: CL('L1B2_iwwrtm'), category: 'Fotografía de', title: 'Boda'        },
-  { src: CL('L1B3_qldrmm'), category: 'Fotografía de', title: 'Boda'        },
+  { src: CL('L1Q1_ln2zsu'), category: '', title: 'XV Años' },
+  { src: CL('L1Q2_szhrlw'), category: '', title: 'XV Años' },
+  { src: CL('L1Q3_g5bnty'), category: '', title: 'XV Años' },
+  { src: CL('L2Q1_nlbgve'), category: '', title: 'XV Años' },
+  { src: CL('L1B1_g4t9kq'), category: '', title: 'Boda'        },
+  { src: CL('L1B2_iwwrtm'), category: '', title: 'Boda'        },
+  { src: CL('L1B3_qldrmm'), category: '', title: 'Boda'        },
 ];
 
-const INTERVAL = 3000;
+const INTERVAL = 5000; // ms
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
@@ -72,33 +72,24 @@ export default function Hero() {
 
       {/* ── Text — right side ───────────────────── */}
       <div className="hero__layout">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current}
-            className="hero__copy"
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0  }}
-            exit={{    opacity: 0, y: -16 }}
-            transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
-          >
-            <span className="hero__label">{slide.category}</span>
-            <h1 className="hero__title">{slide.title}</h1>
-            <p className="hero__subtitle">
-              Sesiones profesionales que capturan la emoción,
-              la elegancia y los detalles únicos de tu momento especial.
-            </p>
-            <div className="hero__actions">
-              <a href="#services" className="hero__cta">
-                Ver opciones y precios
-                <ArrowRight size={15} />
-              </a>
-              <a href="#locations" className="hero__cta hero__cta--ghost">
-                Ver locaciones
-                <ArrowRight size={15} />
-              </a>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+        <div className="hero__copy">
+          <span className="hero__label">Fotografía &amp; Video</span>
+          <h1 className="hero__title">Somos tu mejor opción</h1>
+          <p className="hero__subtitle">
+            Con más de 15 años de experiencia en video y fotografía de eventos sociales,
+            deja que nuestra familia cuide de tus recuerdos.
+          </p>
+          <div className="hero__actions">
+            <a href="#locations" className="hero__cta hero__cta--ghost">
+              Ver locaciones
+              <ArrowRight size={15} />
+            </a>
+            <a href="#services" className="hero__cta">
+              Ver opciones y paquetes
+              <ArrowRight size={15} />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* ── Dot indicators ──────────────────────── */}
@@ -121,7 +112,7 @@ export default function Hero() {
             className="hero__progress-bar"
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
-            transition={{ duration: INTERVAL / 1000, ease: 'linear' }}
+            transition={{ duration: INTERVAL / 10, ease: 'linear' }}
           />
         </div>
       )}

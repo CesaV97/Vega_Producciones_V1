@@ -93,14 +93,26 @@
 .hero__copy {
   text-align: right;
   max-width: 460px;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 86, 219, 0.30) 0%,
+    rgba(26, 86, 219, 0.12) 60%,
+    rgba(0, 0, 0, 0.08)     100%
+  );
+  border: 1px solid rgba(26, 86, 219, 0.25);
+  border-radius: 16px;
+  padding: 28px 32px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* small italic category label — "Fotografía de" */
 .hero__label {
   display: block;
-  font-size: 16px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 30px;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.5px;
   margin-bottom: 10px;
@@ -108,19 +120,21 @@
 
 /* big slide title — "Boda" / "Quinceañera" etc. */
 .hero__title {
-  font-size: clamp(52px, 7vw, 96px);
-  font-weight: 700;
-  line-height: 1.0;
-  letter-spacing: -3px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: clamp(42px, 7vw, 42px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero__subtitle {
-  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.7;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 32px;
   max-width: 380px;
   margin-left: auto;  /* right-align block */
@@ -131,11 +145,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  gap: 8px;
 }
 
 .hero__cta {
   display: inline-flex;
+  font-family: 'Raleway', sans-serif;
   align-items: center;
   gap: 8px;
   padding: 12px 26px;
@@ -146,7 +161,7 @@
   transition: background 0.22s ease, border-color 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
   backdrop-filter: blur(6px);
   /* primario: fondo blanco semitransparente */
-  background: rgba(255, 255, 255, 0.18);
+  background: transparent;
   border: 1.5px solid rgba(255, 255, 255, 0.85);
   color: #ffffff;
 }
@@ -158,12 +173,12 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* secundario: solo outline, sin fondo */
+/* secundario: igual al primario */
 .hero__cta--ghost {
   background: transparent;
-  border-color: rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.82);
-  font-weight: 400;
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .hero__cta--ghost:hover {
@@ -231,11 +246,17 @@
   .hero__copy {
     text-align: center;
     max-width: 100%;
+    padding: 20px 20px;
+  }
+
+  .hero__label {
+    font-size: 18px;
   }
 
   .hero__subtitle {
     margin-left: 0;
     margin-right: 0;
+    font-size: 14px;
   }
 
   .hero__actions {
@@ -243,7 +264,26 @@
   }
 
   .hero__title {
-    font-size: clamp(40px, 12vw, 72px);
-    letter-spacing: -2px;
+    font-size: clamp(32px, 10vw, 56px);
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__copy {
+    padding: 16px;
+  }
+
+  .hero__label {
+    font-size: 14px;
+  }
+
+  .hero__title {
+    font-size: clamp(28px, 9vw, 44px);
+  }
+
+  .hero__cta {
+    font-size: 13px;
+    padding: 10px 20px;
   }
 }

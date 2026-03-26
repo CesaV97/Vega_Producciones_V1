@@ -38,8 +38,8 @@ export default function About() {
         >
           <div className="about__image-bg" />
           <img
-            src="/hero-bg.jpg"
-            alt="Vega Producciones estudio"
+            src="https://res.cloudinary.com/dv22lqbsr/image/upload/v1774403503/logo_vega_v1_ce4lbh.jpg"
+            alt="Vega Producciones"
             className="about__image"
           />
           <div className="about__badge">
