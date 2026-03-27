@@ -153,6 +153,17 @@
 }
 
 @media (max-width: 600px) {
-  .pkg-card { min-width: 80vw; max-width: 80vw; }
-  .packages { padding-inline: 12px; gap: 8px; }
+  .pkg-card { min-width: 85vw; max-width: 85vw; }
+  .packages { padding-inline: 8px; gap: 8px; }
+
+  /* quitar fade lateral — en móvil corta limpio */
+  .packages__viewport {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .packages__arrow {
+    width: 36px;
+    height: 36px;
+  }
 }

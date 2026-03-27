@@ -1,14 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import packages from '../data/packages.json';
 import './Services.css';
 
-const STEP = 280; // card width (260) + gap (20)
-
-function PkgCard({ pkg }) {
+function PkgCard({ pkg, cardRef }) {
   return (
-    <div className="pkg-card">
+    <div className="pkg-card" ref={cardRef}>
       <span className="pkg-card__category">{pkg.category}</span>
       <h4 className="pkg-card__name">{pkg.name}</h4>
       <ul className="pkg-card__detail">
@@ -25,12 +23,26 @@ function PkgCard({ pkg }) {
 }
 
 export default function Services() {
+  const [step, setStep] = useState(280);
   const [offset, setOffset] = useState(0);
   const [animated, setAnimated] = useState(true);
-  const total = packages.length * STEP;
+  const cardRef = useRef(null);
+  const total = packages.length * step;
 
-  const next = () => { setAnimated(true); setOffset((o) => o - STEP); };
-  const prev = () => { setAnimated(true); setOffset((o) => o + STEP); };
+  useEffect(() => {
+    const measure = () => {
+      if (cardRef.current) {
+        const gap = window.innerWidth <= 600 ? 8 : 20;
+        setStep(cardRef.current.offsetWidth + gap);
+      }
+    };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, []);
+
+  const next = () => { setAnimated(true); setOffset((o) => o - step); };
+  const prev = () => { setAnimated(true); setOffset((o) => o + step); };
 
   useEffect(() => {
     if (offset <= -total) {
@@ -38,10 +50,10 @@ export default function Services() {
       return () => clearTimeout(t);
     }
     if (offset > 0) {
-      const t = setTimeout(() => { setAnimated(false); setOffset(-(total - STEP)); }, 350);
+      const t = setTimeout(() => { setAnimated(false); setOffset(-(total - step)); }, 350);
       return () => clearTimeout(t);
     }
-  }, [offset, total]);
+  }, [offset, total, step]);
 
   return (
     <section className="services" id="services">
@@ -96,7 +108,7 @@ export default function Services() {
               transition: animated ? 'transform 0.35s ease' : 'none',
             }}
           >
-            {packages.map((pkg) => <PkgCard key={`a-${pkg.id}`} pkg={pkg} />)}
+            {packages.map((pkg, i) => <PkgCard key={`a-${pkg.id}`} pkg={pkg} cardRef={i === 0 ? cardRef : null} />)}
             {packages.map((pkg) => <PkgCard key={`b-${pkg.id}`} pkg={pkg} />)}
           </div>
         </div>

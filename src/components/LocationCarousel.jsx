@@ -101,7 +101,7 @@ export default function LocationCarousel({ title, icon, locations, onSelect }) {
                   ))}
                 </ul>
                 <button className="lcarousel__cta">
-                  Ver locación <ArrowRight size={13} />
+                  Ver locación y Galeria <ArrowRight size={13} />
                 </button>
               </div>
             </motion.div>

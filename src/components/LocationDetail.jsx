@@ -60,7 +60,7 @@ export default function LocationDetail({ location, onClose }) {
 
             {/* ── Características + Mapa ─────────── */}
             <div className="ld-grid">
-              {/* Características */}
+              {/* Características + Recomendaciones */}
               <div className="ld-section">
                 <div className="ld-section__label">
                   <CheckCircle2 size={15} />
@@ -71,6 +71,23 @@ export default function LocationDetail({ location, onClose }) {
                     <li key={i}>{c}</li>
                   ))}
                 </ul>
+
+                {location.recommendations && (
+                  <>
+                    <div className="ld-section__label" style={{ marginTop: 20 }}>
+                      <Info size={15} />
+                      Recomendaciones
+                    </div>
+                    <ul className="ld-recommendations">
+                      {(Array.isArray(location.recommendations)
+                        ? location.recommendations
+                        : location.recommendations.split('\n').filter(Boolean)
+                      ).map((line, i) => (
+                        <li key={i}>{line.trim()}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </div>
 
               {/* Mapa */}
@@ -95,19 +112,10 @@ export default function LocationDetail({ location, onClose }) {
               </div>
             </div>
 
-            {/* ── Recomendaciones ────────────────── */}
-            <div className="ld-section ld-section--full">
-              <div className="ld-section__label">
-                <Info size={15} />
-                Recomendaciones para el área
-              </div>
-              <p className="ld-recommendations">{location.recommendations}</p>
-            </div>
-
             {/* ── Galería ────────────────────────── */}
             <div className="ld-section ld-section--full">
               <div className="ld-section__label">
-                <span style={{ fontSize: 15 }}>🖼</span>
+                <span style={{ fontSize: 15 }}></span>
                 Galería
               </div>
 
