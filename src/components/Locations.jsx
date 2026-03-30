@@ -1,15 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { locations } from '../data/locations';
+import { fetchLocations } from '../data/fetchLocations';
 import LocationCarousel from './LocationCarousel';
 import LocationDetail from './LocationDetail';
 import './Locations.css';
 
-const quinceaneras = locations.filter(l => l.types.includes('quinceanera'));
-const bodas        = locations.filter(l => l.types.includes('boda'));
-
 export default function Locations() {
-  const [selected, setSelected] = useState(null);
+  const [locations, setLocations] = useState([]);
+  const [loading, setLoading]     = useState(true);
+  const [error, setError]         = useState(null);
+  const [selected, setSelected]   = useState(null);
+
+  useEffect(() => {
+    fetchLocations()
+      .then(setLocations)
+      .catch(setError)
+      .finally(() => setLoading(false));
+  }, []);
+
+  const quinceaneras = locations.filter(l => l.types.includes('quinceanera'));
+  const bodas        = locations.filter(l => l.types.includes('boda'));
+
+  if (loading) return (
+    <section className="locations" id="locations">
+      <div className="container locations__loading">Cargando locaciones...</div>
+    </section>
+  );
+
+  if (error) return (
+    <section className="locations" id="locations">
+      <div className="container locations__error">Error al cargar locaciones.</div>
+    </section>
+  );
 
   return (
     <>
