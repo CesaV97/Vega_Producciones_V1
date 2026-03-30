@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
-import packages from '../data/packages.json';
+import { fetchServices } from '../data/fetchServices';
 import './Services.css';
 
 function PkgCard({ pkg, cardRef }) {
@@ -23,11 +23,21 @@ function PkgCard({ pkg, cardRef }) {
 }
 
 export default function Services() {
+  const [packages, setPackages] = useState([]);
+  const [loading, setLoading]   = useState(true);
+  const [error, setError]       = useState(null);
   const [step, setStep] = useState(280);
   const [offset, setOffset] = useState(0);
   const [animated, setAnimated] = useState(true);
   const cardRef = useRef(null);
   const total = packages.length * step;
+
+  useEffect(() => {
+    fetchServices()
+      .then(setPackages)
+      .catch(setError)
+      .finally(() => setLoading(false));
+  }, []);
 
   useEffect(() => {
     const measure = () => {
@@ -54,6 +64,18 @@ export default function Services() {
       return () => clearTimeout(t);
     }
   }, [offset, total, step]);
+
+  if (loading) return (
+    <section className="services" id="services">
+      <div className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>Cargando paquetes...</div>
+    </section>
+  );
+
+  if (error) return (
+    <section className="services" id="services">
+      <div className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>Error al cargar paquetes.</div>
+    </section>
+  );
 
   return (
     <section className="services" id="services">
