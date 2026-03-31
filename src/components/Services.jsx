@@ -1,144 +1,253 @@
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import { fetchServices } from '../data/fetchServices';
 import './Services.css';
 
-function PkgCard({ pkg, cardRef }) {
+const GAP = 20; // px entre cards
+
+/* ── Category Tabs ── */
+function CategoryTabs({ categories, active, onChange }) {
   return (
-    <div className="pkg-card" ref={cardRef}>
-      <span className="pkg-card__category">{pkg.category}</span>
-      <h4 className="pkg-card__name">{pkg.name}</h4>
-      <ul className="pkg-card__detail">
+    <motion.nav
+      className="svc-tabs"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+    >
+      {categories.map((cat) => (
+        <button
+          key={cat}
+          className={`svc-tab${active === cat ? ' svc-tab--active' : ''}`}
+          onClick={() => onChange(cat)}
+        >
+          {cat}
+          {active === cat && (
+            <motion.span
+              className="svc-tab__indicator"
+              layoutId="tab-indicator"
+              transition={{ type: 'spring', stiffness: 400, damping: 36 }}
+            />
+          )}
+        </button>
+      ))}
+    </motion.nav>
+  );
+}
+
+/* ── Package Card ── */
+function PkgCard({ pkg }) {
+  const attrEntries = Object.entries(pkg.attributes || {}).filter(
+    ([, v]) => typeof v === 'string' || typeof v === 'number'
+  );
+
+  return (
+    <div className="svc-card">
+      <div className="svc-card__top">
+        <span className="svc-card__type">{pkg.type}</span>
+        <h4 className="svc-card__name">{pkg.name}</h4>
+      </div>
+
+      <ul className="svc-card__detail">
         {pkg.detail.map((item) => (
-          <li key={item}>{item}</li>
+          <li key={item}>
+            <Check size={12} className="svc-card__check" />
+            {item}
+          </li>
         ))}
       </ul>
-      <span className="pkg-card__price">{pkg.price}</span>
-      <a href="#contact" className="pkg-card__cta">
-        Más información <ArrowRight size={14} />
-      </a>
+
+      {attrEntries.length > 0 && (
+        <dl className="svc-card__attrs">
+          {attrEntries.map(([key, val]) => (
+            <div key={key} className="svc-card__attr">
+              <dt>{key}</dt>
+              <dd>{val}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+
+      <div className="svc-card__bottom">
+        <div className="svc-card__price-wrap">
+          <span className="svc-card__price-line" />
+          <span className="svc-card__price">{pkg.price}</span>
+        </div>
+        <a href="#contact" className="svc-card__cta">
+          Más información <ArrowRight size={13} />
+        </a>
+      </div>
     </div>
   );
 }
 
+/* ── Package Carousel (translateX, infinite wrap) ── */
+function PackageCarousel({ pkgs, category }) {
+  const [index, setIndex] = useState(0);
+  const [cardW, setCardW] = useState(340);
+  const wrapRef = useRef(null);
+
+  /* Reset index when category changes */
+  useEffect(() => { setIndex(0); }, [category]);
+
+  /* Measure available width → card width */
+  useEffect(() => {
+    const calc = () => {
+      if (!wrapRef.current) return;
+      const w = wrapRef.current.offsetWidth;
+      const visible = w >= 740 ? 2 : 1;
+      setCardW(Math.floor((w - GAP * (visible - 1)) / visible));
+    };
+    calc();
+    window.addEventListener('resize', calc);
+    return () => window.removeEventListener('resize', calc);
+  }, []);
+
+  if (pkgs.length === 0) {
+    return <p className="svc-empty">Paquetes próximamente…</p>;
+  }
+
+  const visible  = wrapRef.current?.offsetWidth >= 740 ? 2 : 1;
+  const maxIndex = Math.max(0, pkgs.length - visible);
+
+  const prev = () => setIndex((i) => (i <= 0 ? maxIndex : i - 1));
+  const next = () => setIndex((i) => (i >= maxIndex ? 0 : i + 1));
+
+  const translateX = index * (cardW + GAP);
+
+  return (
+    <div className="svc-carousel">
+      {/* Flechas — alineadas a la derecha, sobre el track */}
+      <div className="svc-carousel__arrows">
+        <button className="svc-carousel__arrow" onClick={prev} aria-label="Anterior">
+          <ChevronLeft size={20} />
+        </button>
+        <button className="svc-carousel__arrow" onClick={next} aria-label="Siguiente">
+          <ChevronRight size={20} />
+        </button>
+      </div>
+
+      {/* Track con overflow oculto → altura fija */}
+      <div className="svc-carousel__wrap" ref={wrapRef}>
+        <div
+          className="svc-carousel__track"
+          style={{
+            transform: `translateX(-${translateX}px)`,
+            gap: `${GAP}px`,
+          }}
+        >
+          {pkgs.map((pkg) => (
+            <div
+              key={pkg.id}
+              className="svc-card-wrap"
+              style={{ width: cardW, minWidth: cardW }}
+            >
+              <PkgCard pkg={pkg} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Dots */}
+      {pkgs.length > 1 && (
+        <div className="svc-dots">
+          {pkgs.map((_, i) => (
+            <button
+              key={i}
+              className={`svc-dot${i === index ? ' svc-dot--active' : ''}`}
+              onClick={() => setIndex(Math.min(i, maxIndex))}
+              aria-label={`Paquete ${i + 1}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ── Main Section ── */
 export default function Services() {
-  const [packages, setPackages] = useState([]);
-  const [loading, setLoading]   = useState(true);
-  const [error, setError]       = useState(null);
-  const [step, setStep] = useState(280);
-  const [offset, setOffset] = useState(0);
-  const [animated, setAnimated] = useState(true);
-  const cardRef = useRef(null);
-  const total = packages.length * step;
+  const [packages,  setPackages]  = useState([]);
+  const [loading,   setLoading]   = useState(true);
+  const [error,     setError]     = useState(null);
+  const [activeTab, setActiveTab] = useState('');
 
   useEffect(() => {
     fetchServices()
-      .then(setPackages)
+      .then((data) => {
+        setPackages(data);
+        if (data.length > 0) setActiveTab(data[0].category);
+      })
       .catch(setError)
       .finally(() => setLoading(false));
   }, []);
 
-  useEffect(() => {
-    const measure = () => {
-      if (cardRef.current) {
-        const gap = window.innerWidth <= 600 ? 8 : 20;
-        setStep(cardRef.current.offsetWidth + gap);
-      }
-    };
-    measure();
-    window.addEventListener('resize', measure);
-    return () => window.removeEventListener('resize', measure);
-  }, []);
-
-  const next = () => { setAnimated(true); setOffset((o) => o - step); };
-  const prev = () => { setAnimated(true); setOffset((o) => o + step); };
-
-  useEffect(() => {
-    if (offset <= -total) {
-      const t = setTimeout(() => { setAnimated(false); setOffset(0); }, 350);
-      return () => clearTimeout(t);
-    }
-    if (offset > 0) {
-      const t = setTimeout(() => { setAnimated(false); setOffset(-(total - step)); }, 350);
-      return () => clearTimeout(t);
-    }
-  }, [offset, total, step]);
+  const categories = [...new Set(packages.map((p) => p.category))];
+  const grouped    = {};
+  categories.forEach((cat) => {
+    grouped[cat] = packages.filter((p) => p.category === cat);
+  });
 
   if (loading) return (
     <section className="services" id="services">
-      <div className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>Cargando paquetes...</div>
+      <div className="container svc-loading">Cargando paquetes…</div>
     </section>
   );
 
   if (error) return (
     <section className="services" id="services">
-      <div className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>Error al cargar paquetes.</div>
+      <div className="container svc-loading">Error al cargar paquetes.</div>
     </section>
   );
 
   return (
     <section className="services" id="services">
       <div className="container">
-        <div className="services__header">
-          <motion.span
-            className="section-label"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+        {/* Header */}
+        <motion.span
+          className="section-label"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          Nuestros paquetes
+        </motion.span>
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+         Momentos únicos que vivirán para siempre
+        </motion.h2>
+        {/* Tabs */}
+        {categories.length > 0 && (
+          <CategoryTabs
+            categories={categories}
+            active={activeTab}
+            onChange={setActiveTab}
+          />
+        )}
+
+        {/* Carousel — cambia in-place sin mover la página */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
           >
-            Lo que hacemos
-          </motion.span>
-          <motion.h2
-            className="section-title"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            Servicios diseñados
-            <br />para brillar
-          </motion.h2>
-          <motion.p
-            className="section-subtitle"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Somos tu equipo creativo completo — foto, video y estudio bajo un mismo techo.
-          </motion.p>
-        </div>
+            <PackageCarousel
+              pkgs={grouped[activeTab] || []}
+              category={activeTab}
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
-
-      <motion.div
-        className="packages"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-      >
-        <button className="packages__arrow packages__arrow--prev" onClick={prev} aria-label="Anterior">
-          <ChevronLeft size={20} />
-        </button>
-
-        <div className="packages__viewport">
-          <div
-            className="packages__track"
-            style={{
-              transform: `translateX(${offset}px)`,
-              transition: animated ? 'transform 0.35s ease' : 'none',
-            }}
-          >
-            {packages.map((pkg, i) => <PkgCard key={`a-${pkg.id}`} pkg={pkg} cardRef={i === 0 ? cardRef : null} />)}
-            {packages.map((pkg) => <PkgCard key={`b-${pkg.id}`} pkg={pkg} />)}
-          </div>
-        </div>
-
-        <button className="packages__arrow packages__arrow--next" onClick={next} aria-label="Siguiente">
-          <ChevronRight size={20} />
-        </button>
-      </motion.div>
     </section>
   );
 }

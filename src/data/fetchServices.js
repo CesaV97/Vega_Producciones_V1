@@ -13,10 +13,12 @@ export async function fetchServices() {
   }
 
   return data.map(row => ({
-    id:       row.service_id,
-    name:     row.name,
-    category: row.category,
-    detail:   row.includes,
-    price:    `$${Number(row.price).toLocaleString('es-MX')} ${row.currency}`,
+    id:         row.service_id,
+    name:       row.name,
+    category:   row.category,
+    type:       row.type,
+    detail:     row.includes,
+    price:      `$${Number(row.price).toLocaleString('es-MX')} ${row.currency}`,
+    attributes: row.attributes || {},
   }))
 }
