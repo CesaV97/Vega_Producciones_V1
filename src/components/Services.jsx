@@ -46,7 +46,12 @@ function PkgCard({ pkg }) {
     <div className="svc-card">
       <div className="svc-card__top">
         <span className="svc-card__type">{pkg.type}</span>
+
+        <div className="svc-card__row"> 
         <h4 className="svc-card__name">{pkg.name}</h4>
+        <span className="svc-card__price-line" />
+        <span className="svc-card__price">{pkg.price}</span>
+        </div>
       </div>
 
       <ul className="svc-card__detail">
@@ -54,30 +59,14 @@ function PkgCard({ pkg }) {
           <li key={item}>
             <Check size={12} className="svc-card__check" />
             {item}
-          </li>
+          </li>          
         ))}
-      </ul>
-
-      {attrEntries.length > 0 && (
-        <dl className="svc-card__attrs">
-          {attrEntries.map(([key, val]) => (
-            <div key={key} className="svc-card__attr">
-              <dt>{key}</dt>
-              <dd>{val}</dd>
-            </div>
-          ))}
-        </dl>
-      )}
-
       <div className="svc-card__bottom">
-        <div className="svc-card__price-wrap">
-          <span className="svc-card__price-line" />
-          <span className="svc-card__price">{pkg.price}</span>
+        <div className="svc-card__price-wrap">                    
         </div>
-        <a href="#contact" className="svc-card__cta">
-          Más información <ArrowRight size={13} />
-        </a>
+        <a href="#contact" className="svc-card__cta"> Más información </a>
       </div>
+      </ul>
     </div>
   );
 }
@@ -219,7 +208,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}          
         >
          Momentos únicos que vivirán para siempre
         </motion.h2>
