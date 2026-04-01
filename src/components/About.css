@@ -1,3 +1,7 @@
+/* ══════════════════════════════════════════════
+   ABOUT — Editorial Magazine
+   ══════════════════════════════════════════════ */
+
 .about {
   background: var(--bg);
 }
@@ -9,15 +13,22 @@
   align-items: center;
 }
 
+/* ── Image column ── */
 .about__image-wrap {
   position: relative;
+  padding-bottom: 16px;
 }
 
-.about__image-bg {
+/* Offset gold frame */
+.about__image-frame {
   position: absolute;
-  inset: -16px;
-  background: radial-gradient(ellipse at center, var(--gold-light), transparent 70%);
-  border-radius: 32px;
+  top: 20px;
+  left: 20px;
+  right: -12px;
+  bottom: -4px;
+  border: 1px solid rgba(184, 150, 62, 0.28);
+  border-radius: var(--radius-xl);
+  pointer-events: none;
 }
 
 .about__image {
@@ -31,12 +42,13 @@
   box-shadow: var(--shadow-lg);
 }
 
+/* 5★ floating badge */
 .about__badge {
   position: absolute;
-  bottom: 28px;
-  right: -18px;
+  bottom: 40px;
+  right: -20px;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border);
@@ -49,104 +61,122 @@
 }
 
 .about__badge-num {
-  font-size: 26px;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
   letter-spacing: -1px;
   color: var(--gold);
+  line-height: 1;
 }
 
 .about__badge-text {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-3);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-/* ── Scrollable reviews ── */
-.about__reviews-scroll {
-  margin-top: 28px;
+/* Thin left editorial rule */
+.about__image-rule {
+  position: absolute;
+  left: -24px;
+  top: 20%;
+  bottom: 20%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+  opacity: 0.35;
+}
+
+/* ── Text column ── */
+.about__text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-height: 272px;
-  overflow-y: auto;
-  padding-right: 6px;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
+  gap: 0;
 }
 
-.about__reviews-scroll::-webkit-scrollbar {
-  width: 4px;
-}
-.about__reviews-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-.about__reviews-scroll::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 4px;
+/* Body paragraph */
+.about__body {
+  font-size: 16px;
+  color: var(--text-3);
+  line-height: 1.8;
+  margin: 18px 0 28px;
 }
 
-.about__review-item {
-  padding: 14px 16px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  background: var(--bg-2);
+/* ── Highlights checklist ── */
+.about__highlights {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  transition: box-shadow 0.2s;
+  gap: 13px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
 }
 
-.about__review-item:hover {
-  box-shadow: var(--shadow-sm);
-}
-
-.about__review-meta {
+.about__highlight-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-2);
+  letter-spacing: -0.1px;
 }
 
-.about__review-source {
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  display: flex;
+.about__check {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-}
-
-.about__review-stars {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  border: 1px solid rgba(184, 150, 62, 0.3);
   color: var(--gold);
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 11px;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
-.about__review-name {
-  font-size: 12px;
+/* ── CTA button — dorado editorial ── */
+.about__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 13px 28px;
+  border-radius: 980px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 14px;
   font-weight: 600;
-  color: var(--text-1);
-  margin-left: auto;
+  letter-spacing: 0.3px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease,
+              box-shadow 0.2s ease, gap 0.2s;
+  text-decoration: none;
 }
 
-.about__review-text {
-  font-size: 12px;
-  color: var(--text-3);
-  line-height: 1.6;
+.about__cta:hover {
+  background: #a0812e;          /* gold ligeramente más oscuro */
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(184, 150, 62, 0.35);
+  gap: 12px;
 }
 
+/* ── Responsive ── */
 @media (max-width: 900px) {
-  .about__inner { grid-template-columns: 1fr; gap: 48px; }
-  .about__badge { right: 12px; }
-  .about__image { aspect-ratio: 3/2; }
-  .about__reviews-scroll { max-height: 240px; }
+  .about__inner        { grid-template-columns: 1fr; gap: 48px; }
+  .about__image-frame  { display: none; }
+  .about__image-rule   { display: none; }
+  .about__badge        { right: 12px; }
+  .about__image        { aspect-ratio: 3/2; }
 }
 
 @media (max-width: 480px) {
-  .about__image { aspect-ratio: 4/3; }
-  .about__badge { right: 8px; bottom: 16px; padding: 10px 14px; }
-  .about__badge-num { font-size: 20px; }
-  .about__reviews-scroll { max-height: 200px; }
+  .about__image        { aspect-ratio: 4/3; }
+  .about__badge        { right: 8px; bottom: 16px; padding: 10px 14px; }
+  .about__badge-num    { font-size: 22px; }
+  .about__body         { font-size: 15px; }
 }
