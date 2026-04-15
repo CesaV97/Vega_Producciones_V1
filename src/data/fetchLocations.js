@@ -1,7 +1,7 @@
 import { supabase } from '../lib/supabase'
 
 const CL = (id) =>
-  `https://res.cloudinary.com/dv22lqbsr/image/upload/f_auto,q_auto/${id}`
+  `https://res.cloudinary.com/dv22lqbsr/image/upload/${id}`
 
 export async function fetchLocations() {
   const { data, error } = await supabase
