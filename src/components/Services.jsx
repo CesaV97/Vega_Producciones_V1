@@ -5,6 +5,7 @@ import packages from '../data/services.json';
 import './Services.css';
 
 const GAP = 20; // px entre cards
+const MIN_TWO_CARDS = 700; // ancho mínimo del contenedor para mostrar 2 cards
 
 const categories = [...new Set(packages.map((p) => p.category))];
 const grouped = Object.fromEntries(
@@ -79,31 +80,41 @@ function PkgCard({ pkg }) {
 /* ── Package Carousel (translateX, infinite wrap) ── */
 function PackageCarousel({ pkgs, category }) {
   const [index, setIndex] = useState(0);
-  const [cardW, setCardW] = useState(340);
+  const [{ cardW, visible }, setLayout] = useState({ cardW: 0, visible: 1 });
   const wrapRef = useRef(null);
 
   /* Reset index when category changes */
   useEffect(() => { setIndex(0); }, [category]);
 
-  /* Measure available width → card width */
+  /* Medir el contenedor con ResizeObserver → reacciona a cualquier cambio de ancho */
   useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
     const calc = () => {
-      if (!wrapRef.current) return;
-      const w = wrapRef.current.offsetWidth;
-      const visible = w >= 740 ? 2 : 1;
-      setCardW(Math.floor((w - GAP * (visible - 1)) / visible));
+      const w = el.clientWidth;
+      if (!w) return;
+      const vis = w >= MIN_TWO_CARDS ? 2 : 1;
+      const width = Math.floor((w - GAP * (vis - 1)) / vis);
+      setLayout((prev) =>
+        prev.cardW === width && prev.visible === vis ? prev : { cardW: width, visible: vis }
+      );
     };
     calc();
-    window.addEventListener('resize', calc);
-    return () => window.removeEventListener('resize', calc);
-  }, []);
+    const ro = new ResizeObserver(calc);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [pkgs.length]);
+
+  const maxIndex = Math.max(0, pkgs.length - visible);
+
+  /* Si al redimensionar el índice queda fuera de rango, ajustarlo */
+  useEffect(() => {
+    setIndex((i) => Math.min(i, maxIndex));
+  }, [maxIndex]);
 
   if (pkgs.length === 0) {
     return <p className="svc-empty">Paquetes próximamente…</p>;
   }
-
-  const visible  = wrapRef.current?.offsetWidth >= 740 ? 2 : 1;
-  const maxIndex = Math.max(0, pkgs.length - visible);
 
   const prev = () => setIndex((i) => (i <= 0 ? maxIndex : i - 1));
   const next = () => setIndex((i) => (i >= maxIndex ? 0 : i + 1));
@@ -135,7 +146,7 @@ function PackageCarousel({ pkgs, category }) {
             <div
               key={pkg.id}
               className="svc-card-wrap"
-              style={{ width: cardW, minWidth: cardW }}
+              style={cardW ? { width: cardW, minWidth: cardW } : { width: '100%' }}
             >
               <PkgCard pkg={pkg} />
             </div>
@@ -144,14 +155,14 @@ function PackageCarousel({ pkgs, category }) {
       </div>
 
       {/* Dots */}
-      {pkgs.length > 1 && (
+      {maxIndex > 0 && (
         <div className="svc-dots">
-          {pkgs.map((_, i) => (
+          {Array.from({ length: maxIndex + 1 }, (_, i) => (
             <button
               key={i}
               className={`svc-dot${i === index ? ' svc-dot--active' : ''}`}
-              onClick={() => setIndex(Math.min(i, maxIndex))}
-              aria-label={`Paquete ${i + 1}`}
+              onClick={() => setIndex(i)}
+              aria-label={`Ir a la posición ${i + 1}`}
             />
           ))}
         </div>

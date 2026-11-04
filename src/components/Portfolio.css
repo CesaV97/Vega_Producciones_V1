@@ -31,10 +31,10 @@
 }
 
 .portfolio__filter--active {
-  background: var(--gold);
-  border-color: var(--gold);
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
   color: #fff;
-  box-shadow: 0 2px 12px var(--gold-glow);
+  box-shadow: 0 2px 12px var(--accent-blue-glow);
 }
 
 .portfolio__grid {

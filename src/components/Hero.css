@@ -95,11 +95,11 @@
   max-width: 460px;
   background: linear-gradient(
     135deg,
-    rgba(26, 86, 219, 0.30) 0%,
-    rgba(26, 86, 219, 0.12) 60%,
+    rgba(18, 115, 190, 0.30) 0%,
+    rgba(18, 115, 190, 0.12) 60%,
     rgba(0, 0, 0, 0.08)     100%
   );
-  border: 1px solid rgba(26, 86, 219, 0.25);
+  border: 1px solid rgba(18, 115, 190, 0.25);
   border-radius: 16px;
   padding: 28px 32px;
   backdrop-filter: blur(10px);

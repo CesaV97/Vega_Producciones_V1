@@ -25,7 +25,7 @@
 }
 
 .footer__tagline {
-  color: var(--gold) !important;
+  color: var(--accent-blue) !important;
   font-weight: 600;
   margin-top: 4px;
 }
@@ -81,9 +81,9 @@
 }
 
 .footer__social-icons a:hover {
-  background: var(--gold-light);
-  border-color: rgba(184,150,62,0.3);
-  color: var(--gold);
+  background: var(--accent-blue-light);
+  border-color: rgba(18,115,190,0.3);
+  color: var(--accent-blue);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }

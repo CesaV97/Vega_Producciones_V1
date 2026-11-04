@@ -49,7 +49,7 @@
 }
 
 .svc-tab:hover    { color: var(--text-1); }
-.svc-tab--active  { color: var(--gold); }
+.svc-tab--active  { color: var(--accent-blue); }
 
 .svc-tab__indicator {
   position: absolute;
@@ -57,7 +57,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--gold);
+  background: var(--accent-blue);
   border-radius: 2px 2px 0 0;
 }
 
@@ -99,23 +99,18 @@
 }
 
 .svc-carousel__arrow:hover {
-  background: var(--gold);
-  border-color: var(--gold);
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
   color: #fff;
-  box-shadow: 0 4px 16px var(--gold-glow);
+  box-shadow: 0 4px 16px var(--accent-blue-glow);
   transform: scale(1.05);
 }
 
-/* Wrap — overflow hidden para que el track sea "fijo" */
+/* Wrap — overflow hidden; padding vertical para que el hover/sombra no se recorten */
 .svc-carousel__wrap {
   overflow: hidden;
-  /* Fade lateral igual que lcarousel */
-  -webkit-mask-image: linear-gradient(
-    to right, transparent 0%, black 3%, black 94%, transparent 100%
-  );
-  mask-image: linear-gradient(
-    to right, transparent 0%, black 3%, black 94%, transparent 100%
-  );
+  padding: 8px 0 14px;
+  margin: -8px 0 -14px;
 }
 
 /* Track — translateX controlado por índice */
@@ -127,7 +122,9 @@
 /* Wrapper de cada card — ancho dinámico vía JS */
 .svc-card-wrap {
   flex-shrink: 0;
+  display: flex;
 }
+.svc-card-wrap > .svc-card { flex: 1; min-width: 0; }
 
 /* ── Dots ── */
 .svc-dots {
@@ -149,8 +146,8 @@
 }
 
 .svc-dot--active {
-  background: var(--gold);
-  border-color: var(--gold);
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
   width: 20px;
   border-radius: 4px;
 }
@@ -177,7 +174,7 @@
 
 .svc-card:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-md), 0 0 0 1px rgba(184,150,62,0.18);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(18,115,190,0.18);
 }
 
 /* ── Card top ── */
@@ -201,8 +198,8 @@
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  color: var(--gold);
-  border: 1px solid rgba(184,150,62,0.35);
+  color: var(--accent-blue);
+  border: 1px solid rgba(18,115,190,0.35);
   border-radius: 980px;
   padding: 3px 10px;
 }
@@ -237,7 +234,7 @@
 
 .svc-card__check {
   flex-shrink: 0;
-  color: var(--gold);
+  color: var(--accent-blue);
   margin-top: 2px;
 }
 
@@ -291,7 +288,7 @@
   display: block;
   width: 28px;
   height: 2px;
-  background: var(--gold);
+  background: var(--accent-blue);
   border-radius: 2px;
 }
 
@@ -299,7 +296,7 @@
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.5px;
-  color: var(--gold);
+  color: var(--accent-blue);
   line-height: 1;
 }
 
@@ -320,9 +317,9 @@
 }
 
 .svc-card__cta:hover {
-  background: var(--gold);
+  background: var(--accent-blue);
   color: #fff;
-  border-color: var(--gold);
+  border-color: var(--accent-blue);
   gap: 8px;
 }
 
@@ -338,11 +335,6 @@
 
 @media (max-width: 768px) {
   /* Sin fade lateral en móvil */
-  .svc-carousel__wrap {
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-
   /* Flechas a la derecha igual que lcarousel en móvil */
   .svc-carousel__arrow {
     width: 38px;

@@ -6,7 +6,7 @@
   position: fixed;
   inset: 0;
   z-index: 2000;
-  background: rgba(26, 20, 14, 0.55);
+  background: rgba(11, 37, 64, 0.55);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: flex-end;
@@ -46,7 +46,7 @@
 
 .ld-breadcrumb span:first-child {
   cursor: pointer;
-  color: var(--gold);
+  color: var(--accent-blue);
   font-weight: 500;
   transition: opacity 0.2s;
 }
@@ -68,7 +68,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--accent-blue);
 }
 
 .ld-close {
@@ -104,7 +104,7 @@
 
 .ld-body::-webkit-scrollbar { width: 5px; }
 .ld-body::-webkit-scrollbar-thumb {
-  background: var(--gold);
+  background: var(--accent-blue);
   border-radius: 3px;
 }
 
@@ -135,7 +135,7 @@
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--accent-blue);
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
@@ -160,7 +160,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--gold);
+  color: var(--accent-blue);
   font-weight: 700;
   font-size: 13px;
 }
@@ -193,7 +193,7 @@
 .ld-recommendations {
   list-style: none;
   background: var(--bg-2);
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--accent-blue);
   padding: 16px 22px;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   display: flex;
@@ -213,7 +213,7 @@
   content: '—';
   position: absolute;
   left: 0;
-  color: var(--gold);
+  color: var(--accent-blue);
   font-weight: 700;
   font-size: 12px;
 }
@@ -310,8 +310,8 @@
 }
 
 .ld-thumb--active {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 2px var(--gold-light);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 2px var(--accent-blue-light);
 }
 
 .ld-thumb:hover:not(.ld-thumb--active) {

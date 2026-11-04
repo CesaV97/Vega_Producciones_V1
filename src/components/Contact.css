@@ -37,11 +37,11 @@
   height: 40px;
   min-width: 40px;
   border-radius: var(--radius-sm);
-  background: var(--gold-light);
+  background: var(--accent-blue-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold);
+  color: var(--accent-blue);
 }
 
 .contact__detail-label {
@@ -80,9 +80,9 @@
 }
 
 .contact__social-btn:hover {
-  background: var(--gold-light);
-  border-color: rgba(184,150,62,0.3);
-  color: var(--gold);
+  background: var(--accent-blue-light);
+  border-color: rgba(18,115,190,0.3);
+  color: var(--accent-blue);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
@@ -146,8 +146,8 @@
 .contact__field input:focus,
 .contact__field select:focus,
 .contact__field textarea:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px var(--gold-glow);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px var(--accent-blue-glow);
 }
 
 /* ── Success ─────────────────────────────────── */
@@ -160,12 +160,12 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--gold-light);
+  background: var(--accent-blue-light);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  color: var(--gold);
+  color: var(--accent-blue);
   margin: 0 auto 20px;
   font-weight: 700;
 }

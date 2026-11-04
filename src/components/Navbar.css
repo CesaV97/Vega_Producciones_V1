@@ -15,10 +15,10 @@
 }
 
 .navbar--scrolled {
-  background: rgba(250, 248, 245, 0.92);
+  background: rgba(234, 243, 251, 0.92);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-  box-shadow: 0 1px 0 rgba(90,70,50,0.09);
+  box-shadow: 0 1px 0 rgba(15,70,120,0.10);
 }
 
 /* ── Inner — anima la altura ── */
@@ -116,8 +116,8 @@
 }
 
 .navbar--scrolled .navbar__link:hover {
-  color: var(--gold);
-  background: var(--gold-light);
+  color: var(--accent-blue);
+  background: var(--accent-blue-light);
 }
 
 /* ── CTA button ── */
@@ -187,8 +187,8 @@
 }
 
 .navbar__mobile-link:hover {
-  color: var(--gold);
-  background: var(--gold-light);
+  color: var(--accent-blue);
+  background: var(--accent-blue-light);
 }
 
 @media (max-width: 860px) {

@@ -7,30 +7,30 @@
 }
 
 :root {
-  /* ── Azul de marca ── */
-  --blue:       #1A56DB;
-  --blue-hover: #1648C0;
-  --blue-light: #EEF2FF;
-  --blue-glow:  rgba(26, 86, 219, 0.18);
+  /* ── Azul de marca (tomado del logo) ── */
+  --blue:       #1273BE;
+  --blue-hover: #0D5E9C;
+  --blue-light: #E3EFF9;
+  --blue-glow:  rgba(18, 115, 190, 0.22);
 
-  /* ── Dorado elegante — acento editorial ── */
-  --gold:       #B8963E;
-  --gold-light: #F8F1E0;
-  --gold-glow:  rgba(184, 150, 62, 0.2);
+  /* ── Azul de acento (labels, detalles) ── */
+  --accent-blue:       #1273BE;
+  --accent-blue-light: #DCEBF7;
+  --accent-blue-glow:  rgba(18, 115, 190, 0.2);
 
-  /* ── Fondos crema cálida ── */
-  --bg:         #FAF8F5;   /* crema principal */
-  --bg-2:       #F2EDE5;   /* crema más profunda */
-  --bg-3:       #FDF9F6;   /* casi blanco cálido */
-  --surface:    rgba(250, 248, 245, 0.88);
-  --border:     rgba(90, 70, 50, 0.09);
-  --border-dark:rgba(90, 70, 50, 0.16);
+  /* ── Fondos azul suave ── */
+  --bg:         #EAF3FB;
+  --bg-2:       #D8E8F5;
+  --bg-3:       #F4F9FD;
+  --surface:    rgba(234, 243, 251, 0.88);
+  --border:     rgba(15, 70, 120, 0.10);
+  --border-dark:rgba(15, 70, 120, 0.20);
 
-  /* ── Texto cálido (no frío gris Apple) ── */
-  --text-1:     #1A1714;   /* casi negro cálido */
-  --text-2:     #3A3028;
-  --text-3:     #7A6E65;
-  --text-4:     #ADA49C;
+  /* ── Texto azul marino ── */
+  --text-1:     #0B2540;
+  --text-2:     #1D3F63;
+  --text-3:     #4F6D8A;
+  --text-4:     #8CA4BC;
 
   /* ── Tipografía ── */
   --font:         'Inter', -apple-system, 'Segoe UI', sans-serif;
@@ -43,9 +43,9 @@
   --radius-xl:  32px;
 
   /* ── Sombras cálidas ── */
-  --shadow-sm:  0 2px 10px rgba(90,60,30,0.07);
-  --shadow-md:  0 8px 32px rgba(90,60,30,0.10);
-  --shadow-lg:  0 24px 64px rgba(90,60,30,0.13);
+  --shadow-sm:  0 2px 10px rgba(15,60,110,0.07);
+  --shadow-md:  0 8px 32px rgba(15,60,110,0.10);
+  --shadow-lg:  0 24px 64px rgba(15,60,110,0.13);
 }
 
 html { scroll-behavior: smooth; }
@@ -82,7 +82,7 @@ section { padding: 100px 0; }
   font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--accent-blue);
   margin-bottom: 14px;
   display: block;
 }
@@ -151,4 +151,4 @@ section { padding: 100px 0; }
 /* ── Scrollbar ──────────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-2); }
-::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--accent-blue); border-radius: 3px; }
