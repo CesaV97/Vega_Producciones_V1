@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { fetchLocations } from '../data/fetchLocations';
+import locations from '../data/locations.json';
 import LocationCarousel from './LocationCarousel';
 import LocationDetail from './LocationDetail';
 import './Locations.css';
+
+/* Categorías únicas en orden de aparición */
+const categories = [...new Set(locations.map((l) => l.category))];
 
 /* ── Category Tabs ── */
 function CategoryTabs({ categories, active, onChange }) {
@@ -36,39 +39,11 @@ function CategoryTabs({ categories, active, onChange }) {
 }
 
 export default function Locations() {
-  const [locations, setLocations] = useState([]);
-  const [loading, setLoading]     = useState(true);
-  const [error, setError]         = useState(null);
   const [selected, setSelected]   = useState(null);
-  const [activeTab, setActiveTab] = useState('');
-
-  useEffect(() => {
-    fetchLocations()
-      .then((data) => {
-        setLocations(data);
-        if (data.length > 0) setActiveTab(data[0].category);
-      })
-      .catch(setError)
-      .finally(() => setLoading(false));
-  }, []);
-
-  /* Categorías únicas en orden de aparición */
-  const categories = [...new Set(locations.map((l) => l.category))];
+  const [activeTab, setActiveTab] = useState(locations[0]?.category ?? '');
 
   /* Locaciones de la categoría activa */
   const activeLocs = locations.filter((l) => l.category === activeTab);
-
-  if (loading) return (
-    <section className="locations" id="locations">
-      <div className="container locations__loading">Cargando locaciones...</div>
-    </section>
-  );
-
-  if (error) return (
-    <section className="locations" id="locations">
-      <div className="container locations__error">Error al cargar locaciones.</div>
-    </section>
-  );
 
   return (
     <>

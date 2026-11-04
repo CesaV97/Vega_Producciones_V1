@@ -327,8 +327,7 @@
 }
 
 /* ── Estados ── */
-.svc-empty,
-.svc-loading {
+.svc-empty {
   padding: 48px 24px;
   text-align: center;
   color: var(--text-3);

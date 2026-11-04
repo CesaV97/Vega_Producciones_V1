@@ -1,10 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Check, ChevronLeft, ChevronRight } from 'lucide-react';
-import { fetchServices } from '../data/fetchServices';
+import packages from '../data/services.json';
 import './Services.css';
 
 const GAP = 20; // px entre cards
+
+const categories = [...new Set(packages.map((p) => p.category))];
+const grouped = Object.fromEntries(
+  categories.map((cat) => [cat, packages.filter((p) => p.category === cat)])
+);
 
 /* ── Category Tabs ── */
 function CategoryTabs({ categories, active, onChange }) {
@@ -157,38 +162,7 @@ function PackageCarousel({ pkgs, category }) {
 
 /* ── Main Section ── */
 export default function Services() {
-  const [packages,  setPackages]  = useState([]);
-  const [loading,   setLoading]   = useState(true);
-  const [error,     setError]     = useState(null);
-  const [activeTab, setActiveTab] = useState('');
-
-  useEffect(() => {
-    fetchServices()
-      .then((data) => {
-        setPackages(data);
-        if (data.length > 0) setActiveTab(data[0].category);
-      })
-      .catch(setError)
-      .finally(() => setLoading(false));
-  }, []);
-
-  const categories = [...new Set(packages.map((p) => p.category))];
-  const grouped    = {};
-  categories.forEach((cat) => {
-    grouped[cat] = packages.filter((p) => p.category === cat);
-  });
-
-  if (loading) return (
-    <section className="services" id="services">
-      <div className="container svc-loading">Cargando paquetes…</div>
-    </section>
-  );
-
-  if (error) return (
-    <section className="services" id="services">
-      <div className="container svc-loading">Error al cargar paquetes.</div>
-    </section>
-  );
+  const [activeTab, setActiveTab] = useState(packages[0]?.category ?? '');
 
   return (
     <section className="services" id="services">
