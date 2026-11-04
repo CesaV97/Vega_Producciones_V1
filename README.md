@@ -1,16 +1,25 @@
-# React + Vite
+# Vega Producciones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web de Vega Producciones (estudio de foto y video) — React + Vite.
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev      # servidor local
+npm run build    # build de producción (dist/)
+npm run lint
+```
 
-## React Compiler
+## Estructura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/components/` — secciones del sitio (Navbar, Hero, Locations, Services, About, Contact, Footer, WhatsAppButton).
+- `src/data/services.json` — paquetes y precios.
+- `src/data/locations.json` — locaciones (galerías en Cloudinary).
+- `src/index.css` — variables globales (paleta azul de marca, tipografía, sombras).
 
-## Expanding the ESLint configuration
+## Despliegue
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cloudflare Workers despliega automáticamente desde `main`.
+
+Los datos de servicios y locaciones son estáticos (JSON); para actualizarlos, edita los archivos de `src/data/`.

@@ -19,7 +19,7 @@
   padding-bottom: 16px;
 }
 
-/* Offset gold frame */
+/* Marco desfasado (oculto: lo reemplaza la pila de fotos) */
 .about__image-frame {
   position: absolute;
   top: 20px;
@@ -52,39 +52,6 @@
   will-change: transform;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-lg);
-}
-
-/* 5★ floating badge */
-.about__badge {
-  position: absolute;
-  bottom: 40px;
-  right: -20px;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  box-shadow: var(--shadow-md);
-}
-
-.about__badge-num {
-  font-family: var(--font-display);
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  color: var(--accent-blue);
-  line-height: 1;
-}
-
-.about__badge-text {
-  font-size: 11px;
-  color: var(--text-3);
-  line-height: 1.5;
 }
 
 /* Thin left editorial rule */
@@ -150,7 +117,7 @@
   line-height: 1;
 }
 
-/* ── CTA button — dorado editorial ── */
+/* ── CTA button — azul de marca ── */
 .about__cta {
   display: inline-flex;
   align-items: center;
@@ -171,7 +138,7 @@
 }
 
 .about__cta:hover {
-  background: #0D5E9C;          /* gold ligeramente más oscuro */
+  background: #0D5E9C;          /* azul de marca más oscuro */
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(18, 115, 190, 0.35);
   gap: 12px;
@@ -179,16 +146,13 @@
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
-  .about__inner        { grid-template-columns: 1fr; gap: 48px; }
-  .about__image-frame  { display: none; }
-  .about__image-rule   { display: none; }
-  .about__badge        { right: 12px; }
-  .about__stack        { aspect-ratio: 3/2; }
+  .about__inner { grid-template-columns: 1fr; gap: 48px; }
+  .about__image-frame { display: none; }
+  .about__image-rule { display: none; }
+  .about__stack { aspect-ratio: 3/2; }
 }
 
 @media (max-width: 480px) {
-  .about__stack        { aspect-ratio: 4/3; }
-  .about__badge        { right: 8px; bottom: 16px; padding: 10px 14px; }
-  .about__badge-num    { font-size: 22px; }
-  .about__body         { font-size: 15px; }
+  .about__stack { aspect-ratio: 4/3; }
+  .about__body { font-size: 15px; }
 }

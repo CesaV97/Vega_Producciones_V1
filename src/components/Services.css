@@ -48,8 +48,8 @@
   overflow: visible;
 }
 
-.svc-tab:hover    { color: var(--text-1); }
-.svc-tab--active  { color: var(--accent-blue); }
+.svc-tab:hover { color: var(--text-1); }
+.svc-tab--active { color: var(--accent-blue); }
 
 .svc-tab__indicator {
   position: absolute;
@@ -236,35 +236,6 @@
   flex-shrink: 0;
   color: var(--accent-blue);
   margin-top: 2px;
-}
-
-/* ── Attributes JSONB ── */
-.svc-card__attrs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 16px;
-  padding: 12px 0;
-  border-top: 1px solid var(--border);
-}
-
-.svc-card__attr {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.svc-card__attr dt {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--text-4);
-}
-
-.svc-card__attr dd {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-2);
 }
 
 /* ── Card bottom ── */

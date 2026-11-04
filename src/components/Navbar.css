@@ -110,7 +110,7 @@
   transition: color 0.2s, background 0.2s, font-size 0.4s ease, letter-spacing 0.4s ease;
 }
 
-/* en scrolled: pill dorado en lugar del subrayado */
+/* en scrolled: pill azul en lugar del subrayado */
 .navbar--scrolled .navbar__link::after {
   display: none;
 }
@@ -118,37 +118,6 @@
 .navbar--scrolled .navbar__link:hover {
   color: var(--accent-blue);
   background: var(--accent-blue-light);
-}
-
-/* ── CTA button ── */
-.navbar__cta {
-  padding: 9px 20px;
-  font-size: 13px;
-  /* outline blanco sobre hero */
-  background: transparent;
-  border: 1.5px solid rgba(255,255,255,0.75);
-  color: #fff;
-  box-shadow: none;
-}
-
-.navbar__cta:hover {
-  background: rgba(255,255,255,0.15);
-  border-color: #fff;
-  transform: none;
-  box-shadow: none;
-}
-
-/* sólido azul al hacer scroll */
-.navbar--scrolled .navbar__cta {
-  background: var(--blue);
-  border-color: var(--blue);
-  color: #fff;
-  box-shadow: 0 2px 12px var(--blue-glow);
-}
-
-.navbar--scrolled .navbar__cta:hover {
-  background: var(--blue-hover);
-  transform: scale(1.02);
 }
 
 /* ── Burger ── */
@@ -192,7 +161,7 @@
 }
 
 @media (max-width: 860px) {
-  .navbar__links, .navbar__cta { display: none; }
+  .navbar__links { display: none; }
   .navbar__burger { display: block; }
 
   .navbar__inner {

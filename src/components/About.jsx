@@ -165,7 +165,7 @@ export default function About() {
             ))}
           </motion.ul>
 
-          {/* CTA — gold editorial, no azul */}
+          {/* CTA */}
           <motion.a
             href="#contact"
             className="about__cta"
