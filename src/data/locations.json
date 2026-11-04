@@ -1,85 +1,6 @@
 [
   {
-    "id": "L1Q1",
-    "name": "Área Central de Fundidora",
-    "category": "Quinceañeras",
-    "types": [
-      "quinceanera"
-    ],
-    "characteristics": [
-      "Exterior",
-      "Jardín",
-      "Gratuito",
-      "No se permiten globos, polvos, bombas de humo"
-    ],
-    "recommendations": [
-      "El punto de encuentro más accesible la pista de Hielo Fundidora (Entrada E6)",
-      "Baños cerca.",
-      "Llevar zapatos cómodos.",
-      "La mayoría lleva short y top facil de quitar y poner cuando llevan cambios de ropa. "
-    ],
-    "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
-    ],
-    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.2849!3d25.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000001%3A0x1!2sParque+Fundidora%2C+Monterrey!5e0!3m2!1ses!2smx!4v1680000000000",
-    "mapAddress": "Av. Fundidora S/N, Obrera, Monterrey, N.L., México"
-  },
-  {
-    "id": "L1B1",
-    "name": "Área Central de Fundidora",
-    "category": "Bodas",
-    "types": [
-      "boda"
-    ],
-    "characteristics": [
-      "Exterior",
-      "Jardín",
-      "Gratuito",
-      "No se permiten globos, polvos, bombas de humo"
-    ],
-    "recommendations": [
-      "El punto de encuentro más accesible es la pista de Hielo Fundidora (Entrada E6)",
-      "Baños cerca.",
-      "Llevar zapatos cómodos."
-    ],
-    "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
-    ],
-    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.785186592623!2d-100.2824053!3d25.678414699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662955fe1f9d70d%3A0x28985ce8ce683cb0!2sPista%20de%20Hielo%20Fundidora!5e0!3m2!1ses!2smx!4v1774584128963!5m2!1ses!2smx",
-    "mapAddress": "Parque Fundidora, Edificio Motores, No 46, Obrera, 64590 Monterrey, N.L."
-  },
-  {
-    "id": "L2Q2",
+    "id": "6cbe4094-a86b-41d4-87d8-8eba24a1b500",
     "name": "Barrio Antiguo",
     "category": "Quinceañeras",
     "types": [
@@ -119,7 +40,7 @@
     "mapAddress": "7-Eleven"
   },
   {
-    "id": "L2B2",
+    "id": "e50dd942-00e6-4c79-ac27-8bd17597ba1a",
     "name": "Barrio Antiguo",
     "category": "Bodas",
     "types": [
@@ -138,45 +59,44 @@
       "Baños se prestan o rentan en los comercios alrededor."
     ],
     "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B7_oe5dky",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B5_vzuho7",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B15_ba7a5w",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B4_aiwmio",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B14_dic8wr",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B12_inffdi",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B3_tl3hn2",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B13_sn5cnz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B2_upwsg7",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B11_wam9uq",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B10_gyxfmx",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B8_ijypti",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B9_gkoal6",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B6_awbf8v",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B1_mu1qqg"
     ],
-    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/L2B8_ijypti",
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.1345780771885!2d-100.30888379999999!3d25.6668332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662945575a8d881%3A0x56f2db5bdcc48b1c!2s7-Eleven!5e0!3m2!1ses!2smx!4v1774578938669!5m2!1ses!2smx",
     "mapAddress": "Dr. José Ma. Coss 931, Barrio Antiguo, Centro, 64000 Monterrey, N.L."
   },
   {
-    "id": "L3Q3",
-    "name": "Casa de Chuy el Rico",
-    "category": "Quinceañeras",
+    "id": "648c22f2-62dc-4e0e-8cd4-8d7ccc859c21",
+    "name": "Boda Estudio 949",
+    "category": "Bodas",
     "types": [
-      "quinceanera"
+      "boda"
     ],
     "characteristics": [
-      "Interior climatizado",
-      "Elegante / clásico",
-      "Jardín",
+      "Interior elegante",
       "Locación con costo",
-      "Se permiten globos",
-      "Información en su página web - https://lacasadechuyelrico.com/ "
+      "Revisar reglamento del lugar al reservar locación",
+      "Se agenda directo en su página en facebook"
     ],
     "recommendations": [
-      "Instalaciones en interior climatizadas",
-      "Pueden ingresar a los vestidores 15 mins antes de empezar su sesión para estar listas puntuales",
-      "45 mins en interior y 15 mins en exterior"
+      "Leer bien el reglamento del lugar.",
+      "El lugar cuenta con baños amplios para cambiarse.",
+      "Confirmar cuantas personas vamos por parte de Vega Producciones.",
+      "Agendar con tiempo."
     ],
     "gallery": [
       "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
@@ -196,15 +116,15 @@
       "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
     ],
     "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.6695803844555!2d-100.3034598!3d25.682245699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662955f7036df97%3A0x394ed8219db69d7f!2sLa%20Casa%20de%20Chuy%20el%20Rico!5e0!3m2!1ses!2smx!4v1774579489378!5m2!1ses!2smx",
-    "mapAddress": "Jose Maria Arteaga 1111, Centro, 64000 Monterrey, N.L., México"
+    "mapEmbedUrl": "",
+    "mapAddress": ""
   },
   {
-    "id": "L3B3",
+    "id": "edff08e7-9e55-461e-b252-b688864706d8",
     "name": "Casa de Chuy el Rico",
-    "category": "Bodas",
+    "category": "Quinceañeras",
     "types": [
-      "boda"
+      "quinceanera"
     ],
     "characteristics": [
       "Interior climatizado",
@@ -238,10 +158,50 @@
     ],
     "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.6695803844555!2d-100.3034598!3d25.682245699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662955f7036df97%3A0x394ed8219db69d7f!2sLa%20Casa%20de%20Chuy%20el%20Rico!5e0!3m2!1ses!2smx!4v1774579489378!5m2!1ses!2smx",
+    "mapAddress": "Jose Maria Arteaga 1111, Centro, 64000 Monterrey, N.L., México"
+  },
+  {
+    "id": "bdf98181-88c5-46f4-bec6-d9989f661ff5",
+    "name": "Casa de Chuy el Rico",
+    "category": "Bodas",
+    "types": [
+      "boda"
+    ],
+    "characteristics": [
+      "Interior climatizado",
+      "Elegante / clásico",
+      "Jardín",
+      "Locación con costo",
+      "Se permiten globos",
+      "Información en su página web - https://lacasadechuyelrico.com/"
+    ],
+    "recommendations": [
+      "Instalaciones en interior climatizadas",
+      "Pueden ingresar a los vestidores 15 mins antes de empezar su sesión para estar listas puntuales",
+      "45 mins en interior y 15 mins en exterior"
+    ],
+    "gallery": [
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B9_wg5gie",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B5_mcwmbc",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B6_x4smeo",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B8_vmdot7",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B3_zzpcck",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B4_ljheqv",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B14_qbrnrv",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B11_trkmau",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B15_ighuj6",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B12_szkrgb",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B2_bcg5do",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B10_m1x84m",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B13_mut8qj",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B1_tixbwu"
+    ],
+    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/L3B5_mcwmbc",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.6695803844555!2d-100.3034598!3d25.682245699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662955f7036df97%3A0x394ed8219db69d7f!2sLa%20Casa%20de%20Chuy%20el%20Rico!5e0!3m2!1ses!2smx!4v1774579489378!5m2!1ses!2smx",
     "mapAddress": "Jose Maria Arteaga 1111, Centro, 64000 Monterrey, N.L."
   },
   {
-    "id": "L4Q4",
+    "id": "829005bc-c771-4f44-a52c-733c9765c7db",
     "name": "Centro de Santiago",
     "category": "Quinceañeras",
     "types": [
@@ -278,7 +238,7 @@
     "mapAddress": "Juárez S/N, Santiago, 67310 Santiago, N.L., México"
   },
   {
-    "id": "L5Q5",
+    "id": "6cfc038e-be75-4746-b505-69c67ad31a96",
     "name": "Embarcadero fundidora",
     "category": "Quinceañeras",
     "types": [
@@ -318,7 +278,7 @@
     "mapAddress": "Av Fundidora s/n, Obrera, 64590 Monterrey, N.L."
   },
   {
-    "id": "L4B4",
+    "id": "99dfa0d7-e3fe-4160-9899-d37afad863f0",
     "name": "Embarcadero fundidora",
     "category": "Bodas",
     "types": [
@@ -358,7 +318,7 @@
     "mapAddress": "Av Fundidora s/n, Obrera, 64590 Monterrey, N.L."
   },
   {
-    "id": "L6Q6",
+    "id": "73526609-a811-41c6-9678-d100044afb28",
     "name": "Mansión Obispado",
     "category": "Quinceañeras",
     "types": [
@@ -399,7 +359,7 @@
     "mapAddress": "Obispado, 64050 Monterrey, N.L."
   },
   {
-    "id": "l6B6",
+    "id": "3c4c9007-7f24-4535-af60-ca27896d1e4b",
     "name": "Mansión Obispado",
     "category": "Bodas",
     "types": [
@@ -440,87 +400,7 @@
     "mapAddress": "Obispado, 64050 Monterrey, N.L."
   },
   {
-    "id": "L7Q7",
-    "name": "Palacio de Gobierno",
-    "category": "Quinceañeras",
-    "types": [
-      "quinceanera"
-    ],
-    "characteristics": [
-      "Interior elegante",
-      "No climatizado",
-      "Se solicita permiso que el cliente solicita",
-      "Revisar reglamento del lugar",
-      "Información al 8120338485"
-    ],
-    "recommendations": [
-      "Para solicitar el permiso piden: Oficio con el nombre de los novios o xvañera, fecha, hora de la sesión y teléfono de contacto. Ademas de la copia de la INE del fotógrafo y teléfono.",
-      "El punto de encuentro más accesible es por la puerta de entrada de 5 de Mayo",
-      "No se permite cambiarse en las instalaciones del palacio."
-    ],
-    "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
-    ],
-    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28767.731034145017!2d-100.342331684375!3d25.672409200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2a316551c1%3A0xc0e3ee8c998b975b!2sPalacio%20de%20Gobierno%20del%20Estado%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2sus!4v1774581521490!5m2!1ses!2sus",
-    "mapAddress": "5 de Mayo S/N, Centro, 64000 Monterrey, N.L., México"
-  },
-  {
-    "id": "L7B7",
-    "name": "Palacio de Gobierno",
-    "category": "Bodas",
-    "types": [
-      "boda"
-    ],
-    "characteristics": [
-      "Interior elegante",
-      "No climatizado",
-      "Se solicita permiso",
-      "Revisar reglamento del lugar",
-      "Información al 8120338485"
-    ],
-    "recommendations": [
-      "Para solicitar el permiso piden: Oficio con el nombre de los novios o xvañera, fecha, hora de la sesión y teléfono de contacto. Ademas de la copia de la INE del fotógrafo y teléfono.",
-      "El punto de encuentro más accesible es por la puerta de entrada de 5 de Mayo",
-      "No se permite cambiarse en las instalaciones del palacio."
-    ],
-    "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
-    ],
-    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28767.731034145017!2d-100.342331684375!3d25.672409200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2a316551c1%3A0xc0e3ee8c998b975b!2sPalacio%20de%20Gobierno%20del%20Estado%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2sus!4v1774581521490!5m2!1ses!2sus",
-    "mapAddress": "Palacio de Gobierno, 64050 Monterrey, N.L."
-  },
-  {
-    "id": "L8Q8",
+    "id": "0deb3f2d-d1cb-4321-a332-501283401565",
     "name": "Palacio Real",
     "category": "Quinceañeras",
     "types": [
@@ -560,7 +440,87 @@
     "mapAddress": "P.º de las Américas 2538, Contry La Silla 1er Sector, 64850 Monterrey, N.L., México"
   },
   {
-    "id": "L9Q9",
+    "id": "4fe8ece0-0794-4162-beb3-de6023cf953b",
+    "name": "Palacio de Gobierno",
+    "category": "Quinceañeras",
+    "types": [
+      "quinceanera"
+    ],
+    "characteristics": [
+      "Interior elegante",
+      "No climatizado",
+      "Se solicita permiso que el cliente solicita",
+      "Revisar reglamento del lugar",
+      "Información al 8120338485"
+    ],
+    "recommendations": [
+      "Para solicitar el permiso piden: Oficio con el nombre de los novios o xvañera, fecha, hora de la sesión y teléfono de contacto. Ademas de la copia de la INE del fotógrafo y teléfono.",
+      "El punto de encuentro más accesible es por la puerta de entrada de 5 de Mayo",
+      "No se permite cambiarse en las instalaciones del palacio."
+    ],
+    "gallery": [
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
+    ],
+    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28767.731034145017!2d-100.342331684375!3d25.672409200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2a316551c1%3A0xc0e3ee8c998b975b!2sPalacio%20de%20Gobierno%20del%20Estado%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2sus!4v1774581521490!5m2!1ses!2sus",
+    "mapAddress": "5 de Mayo S/N, Centro, 64000 Monterrey, N.L., México"
+  },
+  {
+    "id": "5578639b-6c02-4d68-a194-e2ae6a31fefe",
+    "name": "Palacio de Gobierno",
+    "category": "Bodas",
+    "types": [
+      "boda"
+    ],
+    "characteristics": [
+      "Interior elegante",
+      "No climatizado",
+      "Se solicita permiso",
+      "Revisar reglamento del lugar",
+      "Información al 8120338485"
+    ],
+    "recommendations": [
+      "Para solicitar el permiso piden: Oficio con el nombre de los novios o xvañera, fecha, hora de la sesión y teléfono de contacto. Ademas de la copia de la INE del fotógrafo y teléfono.",
+      "El punto de encuentro más accesible es por la puerta de entrada de 5 de Mayo",
+      "No se permite cambiarse en las instalaciones del palacio."
+    ],
+    "gallery": [
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
+    ],
+    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28767.731034145017!2d-100.342331684375!3d25.672409200000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2a316551c1%3A0xc0e3ee8c998b975b!2sPalacio%20de%20Gobierno%20del%20Estado%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2sus!4v1774581521490!5m2!1ses!2sus",
+    "mapAddress": "Palacio de Gobierno, 64050 Monterrey, N.L."
+  },
+  {
+    "id": "97b6d028-b836-42bb-beff-6a063e5b6975",
     "name": "Parque Hundido Contry",
     "category": "Quinceañeras",
     "types": [
@@ -601,7 +561,7 @@
     "mapAddress": "Av. Alfonso Reyes 2552, Contry La Silla 5o Sector, 67173 Guadalupe, N.L."
   },
   {
-    "id": "L8B8",
+    "id": "453d22ca-c88c-4b58-b845-2b5f934f7bf5",
     "name": "Parque Hundido Contry",
     "category": "Bodas",
     "types": [
@@ -642,7 +602,7 @@
     "mapAddress": "Av. Alfonso Reyes 2552, Contry La Silla 5o Sector, 67173 Guadalupe, N.L."
   },
   {
-    "id": "L9B9",
+    "id": "436df98b-6bfd-4ed9-bb37-58f9dac94883",
     "name": "Parque La Silla",
     "category": "Bodas",
     "types": [
@@ -681,7 +641,7 @@
     "mapAddress": "Sin Nombre de Col 33, 67174 Guadalupe, N.L."
   },
   {
-    "id": "L10Q10",
+    "id": "739fb556-9b19-457a-b707-fbbbf364740d",
     "name": "Parque Rinconada Colonial",
     "category": "Quinceañeras",
     "types": [
@@ -720,7 +680,7 @@
     "mapAddress": "Nuevo León, Cdad. Apodaca, Moderno Apodaca II, Ibiza, Altabrisa Premier"
   },
   {
-    "id": "L11Q11",
+    "id": "93aedb29-555c-4c19-8c4c-c96b058c6e89",
     "name": "Puente de Cristal - Fundidora",
     "category": "Quinceañeras",
     "types": [
@@ -734,9 +694,9 @@
     ],
     "recommendations": [
       "El punto de encuentro más accesible es la taquilla de Parque Fiesta Aventuras (anteriormente Plaza Sesamo)",
-      "No hay baños muy cerca, lo mejor es llegar ya con el vestido puesto para empezar. ",
+      "No hay baños muy cerca, lo mejor es llegar ya con el vestido puesto para empezar.",
       "Llevar zapatos cómodos.",
-      "La mayoría lleva short y top facil de quitar y poner cuando llevan cambios de ropa. "
+      "La mayoría lleva short y top facil de quitar y poner cuando llevan cambios de ropa."
     ],
     "gallery": [
       "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
@@ -760,7 +720,7 @@
     "mapAddress": "Centro, 64590 Monterrey, N.L."
   },
   {
-    "id": "L10B10",
+    "id": "89906c47-3aa7-4d16-aec5-8e03d43a23b4",
     "name": "Puente de Cristal – Fundidora",
     "category": "Bodas",
     "types": [
@@ -800,7 +760,7 @@
     "mapAddress": "Centro, 64590 Monterrey, N.L."
   },
   {
-    "id": "L12Q12",
+    "id": "7e399d16-2b17-4fa8-a5a4-1a46f398cb2c",
     "name": "Quinta El Juncal",
     "category": "Quinceañeras",
     "types": [
@@ -818,7 +778,7 @@
       "El lugar cuenta con baños amplios para cambiarse.",
       "Llevar zapatos cómodos.",
       "Confirmar cuantas personas vamos por parte de Vega Producciones.",
-      "Agendar con tiempo. "
+      "Agendar con tiempo."
     ],
     "gallery": [
       "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
@@ -842,7 +802,7 @@
     "mapAddress": "Callejon de los Morales, Vereda Tropical 100, Las Escobas, 67190 Guadalupe, N.L."
   },
   {
-    "id": "L11B11",
+    "id": "e75aed82-aeca-43cf-b84e-a01f326e2819",
     "name": "Quinta El Juncal",
     "category": "Bodas",
     "types": [
@@ -884,7 +844,7 @@
     "mapAddress": "Callejon de los Morales, Vereda Tropical 100, Las Escobas, 67190 Guadalupe, N.L."
   },
   {
-    "id": "L13Q13",
+    "id": "65a9a9bc-1e22-4688-884a-b79e465ef83f",
     "name": "Rancho Don Glafiro",
     "category": "Quinceañeras",
     "types": [
@@ -903,7 +863,7 @@
       "El lugar cuenta con baños amplios para cambiarse.",
       "Llevar zapatos cómodos.",
       "Confirmar cuantas personas vamos por parte de Vega Producciones.",
-      "Agendar con tiempo. "
+      "Agendar con tiempo."
     ],
     "gallery": [
       "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
@@ -927,7 +887,7 @@
     "mapAddress": "Unnamed Road, N.L."
   },
   {
-    "id": "L12B12",
+    "id": "b4c6ad48-91f4-4cd9-9f1d-04ba3d0d0804",
     "name": "Rancho Don Glafiro",
     "category": "Bodas",
     "types": [
@@ -946,74 +906,31 @@
       "El lugar cuenta con baños amplios para cambiarse.",
       "Llevar zapatos cómodos.",
       "Confirmar cuantas personas vamos por parte de Vega Producciones.",
-      "Agendar con tiempo. "
+      "Agendar con tiempo."
     ],
     "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B15_gijevy",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B14_aoxski",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B13_fe6zku",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B11_cfv8fh",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B7_cbyty8",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B6_sw5ibe",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B4_hv7bgs",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B5_b8owtr",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B1_xlbq86",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B12_b6euhg",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B10_ebu0yw",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B3_arch1h",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B8_vgeiot",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B9_fku0cc",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/L6B2_csmr5e"
     ],
     "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.0902515282187!2d-100.00793499999999!3d25.233884999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867d2da3fa15849b%3A0xbc05930d198a10d8!2sRancho%20Don%20Glafiro!5e0!3m2!1ses!2smx!4v1774583065622!5m2!1ses!2smx",
     "mapAddress": "Unnamed Road, N.L."
   },
   {
-    "id": "L13B13",
-    "name": "Rancho Don Glafiro",
-    "category": "Bodas",
-    "types": [
-      "boda"
-    ],
-    "characteristics": [
-      "Exterior",
-      "Jardín / Lago",
-      "Locación con costo",
-      "Costo por traslado",
-      "Revisar reglamento del lugar al reservar locación",
-      "Se agenda directo en su página en facebook"
-    ],
-    "recommendations": [
-      "Leer bien el reglamento del lugar.",
-      "El lugar cuenta con baños amplios para cambiarse.",
-      "Llevar zapatos cómodos.",
-      "Confirmar cuantas personas vamos por parte de Vega Producciones.",
-      "Agendar con tiempo. "
-    ],
-    "gallery": [
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
-    ],
-    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.0902515282187!2d-100.00793499999999!3d25.233884999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867d2da3fa15849b%3A0xbc05930d198a10d8!2sRancho%20Don%20Glafiro!5e0!3m2!1ses!2smx!4v1774583065622!5m2!1ses!2smx",
-    "mapAddress": "Unnamed Road, N.L."
-  },
-  {
-    "id": "L14Q14",
+    "id": "94a579ff-f917-45a1-96d4-1a1a1fb3bf90",
     "name": "Rancho San Simon",
     "category": "Quinceañeras",
     "types": [
@@ -1029,9 +946,9 @@
     "recommendations": [
       "Leer bien el reglamento del lugar.",
       "El lugar cuenta con baños amplios para cambiarse.",
-      "Llevar zapatos cómodos / aptos para la tierra ",
+      "Llevar zapatos cómodos / aptos para la tierra",
       "Confirmar cuantas personas vamos por parte de Vega Producciones.",
-      "Agendar con tiempo. "
+      "Agendar con tiempo."
     ],
     "gallery": [
       "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
@@ -1053,5 +970,84 @@
     "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.966667671348!2d-100.108848!3d25.572775699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c54957343c5f%3A0x147a8b6f52f25ae1!2sRancho%20San%20Simon!5e0!3m2!1ses!2smx!4v1774583208723!5m2!1ses!2smx",
     "mapAddress": "Rancho, Cam. a San Simón, 66443 Cdad. Benito Juárez, N.L."
+  },
+  {
+    "id": "cd3c9a42-8ae1-44d9-97fa-4018ffbb6578",
+    "name": "Área Central de Fundidora",
+    "category": "Quinceañeras",
+    "types": [
+      "quinceanera"
+    ],
+    "characteristics": [
+      "Exterior",
+      "Jardín",
+      "Gratuito",
+      "No se permiten globos, polvos, bombas de humo"
+    ],
+    "recommendations": [
+      "El punto de encuentro más accesible la pista de Hielo Fundidora (Entrada E6)",
+      "Baños cerca.",
+      "Llevar zapatos cómodos.",
+      "La mayoría lleva short y top facil de quitar y poner cuando llevan cambios de ropa."
+    ],
+    "gallery": [
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
+    ],
+    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.3!2d-100.2849!3d25.6785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be0000000001%3A0x1!2sParque+Fundidora%2C+Monterrey!5e0!3m2!1ses!2smx!4v1680000000000",
+    "mapAddress": "Av. Fundidora S/N, Obrera, Monterrey, N.L., México"
+  },
+  {
+    "id": "5a283608-a66b-45bd-a249-f941ec2afce5",
+    "name": "Área Central de Fundidora",
+    "category": "Bodas",
+    "types": [
+      "boda"
+    ],
+    "characteristics": [
+      "Exterior",
+      "Jardín",
+      "Gratuito",
+      "No se permiten globos, polvos, bombas de humo"
+    ],
+    "recommendations": [
+      "El punto de encuentro más accesible es la pista de Hielo Fundidora (Entrada E6)",
+      "Baños cerca.",
+      "Llevar zapatos cómodos."
+    ],
+    "gallery": [
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+      "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz"
+    ],
+    "coverImage": "https://res.cloudinary.com/dv22lqbsr/image/upload/empty_zlbisz",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.785186592623!2d-100.2824053!3d25.678414699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662955fe1f9d70d%3A0x28985ce8ce683cb0!2sPista%20de%20Hielo%20Fundidora!5e0!3m2!1ses!2smx!4v1774584128963!5m2!1ses!2smx",
+    "mapAddress": "Parque Fundidora, Edificio Motores, No 46, Obrera, 64590 Monterrey, N.L."
   }
 ]

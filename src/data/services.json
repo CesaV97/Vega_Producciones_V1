@@ -1,1 +1,198 @@
-[]
+[
+  {
+    "id": "25e26d4f-030e-40b3-bdb1-aa141e8a136f",
+    "name": "Básico",
+    "category": "Quinceañeras",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Ampliación 8x10\" texturizada y con marco (de las fotos del evento)",
+      "Fotoclip",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$6,000 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "4a3d5acd-3de0-4f41-9cd6-704a507f8419",
+    "name": "Básico",
+    "category": "Bodas",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Ampliación 8x10\" texturizada y con marco (de las fotos del evento)",
+      "Fotoclip",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$6,500 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa y/o civil el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "4aee5d32-b8a5-4384-932f-5cc25658e3cc",
+    "name": "Gold",
+    "category": "Bodas",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Sesion de fotos casual 60 mins",
+      "Sesion de fotos formal 60 mins",
+      "Foto 20x24\" texturizada y con marco",
+      "Foto 11x14\" texturizada y con marco",
+      "Biombo 9 fotos 6x8\"",
+      "Photobook",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$13,000 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa y/o civil el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "309fa947-01e8-444b-aa66-0c825a74acb3",
+    "name": "Silver",
+    "category": "Quinceañeras",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Sesión fotográfica 60 mins",
+      "Foto 20x24\" texturizada y con marco",
+      "Foto 11x14\" texturizada y con marco",
+      "Biombo 9 fotos 6x8\" (préstamo)",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$9,000 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "a2ba74a1-2e08-4b4d-bdce-fffbb32a22ed",
+    "name": "Sesión",
+    "category": "Quinceañeras",
+    "type": "Fotografía",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Sesión fotográfica 45 mins",
+      "Foto 11x14\" texturizada y con marco",
+      "Biombo 9 fotos 6x8\" (préstamo)",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$7,500 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "2ec90528-bffe-4dee-a9c4-2511f2fa1299",
+    "name": "Gold",
+    "category": "Quinceañeras",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Videoclip",
+      "Sesión fotográfica 90 mins",
+      "Foto 20x24\" texturizada y con marco",
+      "Foto 11x14\" texturizada y con marco",
+      "Biombo 9 fotos 6x8\"",
+      "PhotobookUSB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$12,500 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "f8c23daf-fa3a-4d7e-9500-7adb36f8c165",
+    "name": "Sesión",
+    "category": "Bodas",
+    "type": "Fotografía",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Sesión fotográfica 45 mins",
+      "Foto 11x14\" texturizada y con marco",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$8,000 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa el mismo día del evento, no se cambia por otro servicio"
+    }
+  },
+  {
+    "id": "6f486789-cf9d-4316-a886-83c0a51a8641",
+    "name": "Master",
+    "category": "Quinceañeras",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Videoclip",
+      "Sesión fotográfica 60 mins",
+      "Foto 16x20\" texturizada y con marco",
+      "Biombo 9 fotos 6x8\" (préstamo)",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$10,000 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa el mismo día del evento, no se cambia por otro servicio",
+      "sesion_duracion": "60 mins"
+    }
+  },
+  {
+    "id": "1e013393-710b-4ee0-aac0-875742bf18be",
+    "name": "Silver",
+    "category": "Bodas",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Sesión fotográfica 60 mins",
+      "Foto 20x24\" texturizada y con marco",
+      "Foto 11x14\" texturizada y con marco",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$9,500 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa y/o civil el mismo día del evento, no se cambia por otro servicio",
+      "sesion_duracion": "60 mins"
+    }
+  },
+  {
+    "id": "a039daec-9d76-409d-967d-95b859f665a0",
+    "name": "Master",
+    "category": "Bodas",
+    "type": "Foto + Video",
+    "detail": [
+      "Video y fotografía en evento misa y recepción",
+      "Álbum con 100 impresiones 4x6\"",
+      "Fotoclip",
+      "Sesión de fotos casual 45 mins",
+      "Sesión de fotos formal 45 mins",
+      "Foto 16x20\" texturizada y con marco",
+      "Biombo 9 fotos 6x8\" (préstamo)",
+      "USB con video editado en HD y fotos ilimitadas del evento"
+    ],
+    "price": "$10,500 MXN",
+    "attributes": {
+      "nota": "Si no lleva misa o ceremonia religiosa y/o civil el mismo día del evento, no se cambia por otro servicio",
+      "sesion_casual": "45 mins",
+      "sesion_formal": "45 mins"
+    }
+  }
+]
