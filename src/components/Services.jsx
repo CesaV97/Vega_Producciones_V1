@@ -179,24 +179,6 @@ export default function Services() {
     <section className="services" id="services">
       <div className="container">
         {/* Header */}
-        <motion.span
-          className="section-label"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          Nuestros paquetes
-        </motion.span>
-        <motion.h2
-          className="section-title"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}          
-        >
-         Momentos únicos que vivirán para siempre
-        </motion.h2>
         {/* Tabs */}
         {categories.length > 0 && (
           <CategoryTabs

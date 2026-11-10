@@ -50,27 +50,6 @@ export default function Locations() {
       <section className="locations" id="locations">
         <div className="container">
 
-          {/* Encabezado */}
-          <div className="locations__header">
-            <motion.span
-              className="section-label"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-            >
-              Nuestras locaciones
-            </motion.span>
-            <motion.h2
-              className="section-title"
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              Elige el escenario perfecto para ti
-            </motion.h2>
-          </div>
-
           {/* Divider + Tabs */}
           <div className="locations__divider" />
 

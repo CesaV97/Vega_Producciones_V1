@@ -8,16 +8,28 @@ const links = [
   { label: 'Locaciones', href: '#locations' },
   { label: 'Paquetes',   href: '#services'  },
   { label: 'Nosotros',   href: '#about'        },
-  { label: 'Contacto',   href: '#contact'      },
+  { label: 'Contacto',   href: '#contact', cta: true },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState('#hero');
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', onScroll);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 40);
+      // sección activa: la última cuyo borde superior ya pasó el 40% del viewport
+      const mark = window.innerHeight * 0.4;
+      let current = links[0].href;
+      for (const l of links) {
+        const el = document.querySelector(l.href);
+        if (el && el.getBoundingClientRect().top <= mark) current = l.href;
+      }
+      setActive(current);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -30,7 +42,11 @@ export default function Navbar() {
 
         <nav className="navbar__links">
           {links.map((l) => (
-            <a key={l.label} href={l.href} className="navbar__link">
+            <a
+              key={l.label}
+              href={l.href}
+              className={`navbar__link${l.cta ? ' navbar__link--cta' : ''}${active === l.href ? ' is-active' : ''}`}
+            >
               {l.label}
             </a>
           ))}
@@ -58,7 +74,7 @@ export default function Navbar() {
               <a
                 key={l.label}
                 href={l.href}
-                className="navbar__mobile-link"
+                className={`navbar__mobile-link${l.cta ? ' navbar__mobile-link--cta' : ''}${active === l.href ? ' is-active' : ''}`}
                 onClick={() => setOpen(false)}
               >
                 {l.label}
