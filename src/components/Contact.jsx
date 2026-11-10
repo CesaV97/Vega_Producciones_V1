@@ -4,14 +4,12 @@ import WhatsAppIcon from './WhatsAppIcon';
 import { whatsappLink } from './whatsapp';
 import './Contact.css';
 
-const secondary = [
-  { icon: <Phone size={18} />, label: 'Llamar', value: '+1 (787) 000-0000',         href: 'tel:+17870000000' },
-  { icon: <Mail size={18} />,  label: 'Email',  value: 'info@produccionesvega.net', href: 'mailto:info@produccionesvega.net' },
-];
-
-const socials = [
-  { icon: <Instagram size={22} />, label: 'Instagram', href: 'https://instagram.com' },
-  { icon: <Facebook size={22} />,  label: 'Facebook',  href: 'https://facebook.com' },
+// Opciones secundarias — todas con el mismo estilo de píldora
+const links = [
+  { icon: <Instagram size={22} />, label: 'Instagram', href: 'https://instagram.com', external: true },
+  { icon: <Facebook size={22} />,  label: 'Facebook',  href: 'https://facebook.com',  external: true },
+  { icon: <Phone size={22} />,     label: 'Llamar',    href: 'tel:+17870000000' },
+  { icon: <Mail size={22} />,      label: 'Email',     href: 'mailto:info@produccionesvega.net' },
 ];
 
 export default function Contact() {
@@ -38,16 +36,6 @@ export default function Contact() {
           <br />próximo evento?
         </motion.h2>
 
-        <motion.p
-          className="section-subtitle contact__subtitle"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-        >
-          Escríbenos por WhatsApp y cuéntanos tu proyecto.
-        </motion.p>
-
         {/* ── Acción principal ─────────────────────── */}
         <motion.div
           className="contact__main"
@@ -70,42 +58,21 @@ export default function Contact() {
 
         {/* ── Opciones secundarias ─────────────────── */}
         <motion.div
-          className="contact__secondary"
+          className="contact__social"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
         >
-          {secondary.map((s) => (
-            <a key={s.label} href={s.href} className="contact__detail">
-              <span className="contact__detail-icon">{s.icon}</span>
-              <span>
-                <span className="contact__detail-label">{s.label}</span>
-                <span className="contact__detail-value">{s.value}</span>
-              </span>
-            </a>
-          ))}
-
-        </motion.div>
-
-        {/* ── Redes sociales ───────────────────────── */}
-        <motion.div
-          className="contact__social"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-        >
-          {socials.map((s) => (
+          {links.map((l) => (
             <a
-              key={s.label}
-              href={s.href}
-              target="_blank"
-              rel="noreferrer"
+              key={l.label}
+              href={l.href}
               className="contact__social-btn"
+              {...(l.external && { target: '_blank', rel: 'noreferrer' })}
             >
-              {s.icon}
-              {s.label}
+              {l.icon}
+              {l.label}
             </a>
           ))}
         </motion.div>
