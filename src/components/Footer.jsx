@@ -16,7 +16,6 @@ export default function Footer() {
           <h4>Servicios</h4>
           <a href="#services">Fotografía</a>
           <a href="#services">Video</a>
-          <a href="#services">Renta de Estudio</a>
         </div>
 
         <div className="footer__links">
@@ -28,10 +27,10 @@ export default function Footer() {
         <div className="footer__social">
           <h4>Síguenos</h4>
           <div className="footer__social-icons">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/vegaproducciones_oficial" target="_blank" rel="noreferrer" aria-label="Instagram">
               <Instagram size={20} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/vegaproduccionesoficial" target="_blank" rel="noreferrer" aria-label="Facebook">
               <Facebook size={20} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">

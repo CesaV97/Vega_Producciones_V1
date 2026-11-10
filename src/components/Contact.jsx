@@ -6,8 +6,8 @@ import './Contact.css';
 
 // Opciones secundarias — todas con el mismo estilo de píldora
 const links = [
-  { icon: <Instagram size={22} />, label: 'Instagram', href: 'https://instagram.com', external: true },
-  { icon: <Facebook size={22} />,  label: 'Facebook',  href: 'https://facebook.com',  external: true },
+  { icon: <Instagram size={22} />, label: 'Instagram', href: 'https://www.instagram.com/vegaproducciones_oficial', external: true },
+  { icon: <Facebook size={22} />,  label: 'Facebook',  href: 'https://www.facebook.com/vegaproduccionesoficial',  external: true },
   { icon: <Phone size={22} />,     label: 'Llamar',    href: 'tel:+17870000000' },
   { icon: <Mail size={22} />,      label: 'Email',     href: 'mailto:info@produccionesvega.net' },
 ];
