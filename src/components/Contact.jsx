@@ -8,7 +8,8 @@ import './Contact.css';
 const links = [
   { icon: <Instagram size={22} />, label: 'Instagram', href: 'https://www.instagram.com/vegaproducciones_oficial?xtok=MXRkaGs1ZGZkNTByZw%3D%3D', external: true },
   { icon: <Facebook size={22} />,  label: 'Facebook',  href: 'https://www.facebook.com/share/1DvqYFjxjK/',  external: true },
-  { icon: <Phone size={22} />,     label: 'Llamar',    href: 'tel:+17870000000' },
+  { icon: <Phone size={22} />,     label: '81 8079 0057', href: 'tel:+528180790057' },
+  { icon: <Phone size={22} />,     label: '81 1004 6160', href: 'tel:+528110046160' },
   { icon: <Mail size={22} />,      label: 'Email',     href: 'mailto:info@produccionesvega.net' },
 ];
 
@@ -53,7 +54,7 @@ export default function Contact() {
             <WhatsAppIcon size={26} />
             Escríbenos por WhatsApp
           </a>
-
+          <p className="contact__hours">Lunes a viernes · 10:00 am – 7:00 pm</p>
         </motion.div>
 
         {/* ── Opciones secundarias ─────────────────── */}

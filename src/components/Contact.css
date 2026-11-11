@@ -38,6 +38,12 @@
   box-shadow: 0 12px 34px rgba(37, 211, 102, 0.45);
 }
 
+.contact__hours {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text-2, #6b7280);
+}
+
 .contact__social {
   display: flex;
   flex-wrap: wrap;

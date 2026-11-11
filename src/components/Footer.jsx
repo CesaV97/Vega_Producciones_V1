@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -32,9 +32,6 @@ export default function Footer() {
             </a>
             <a href="https://www.facebook.com/share/1DvqYFjxjK/" target="_blank" rel="noreferrer" aria-label="Facebook">
               <Facebook size={20} />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
-              <Youtube size={20} />
             </a>
           </div>
         </div>
