@@ -3,14 +3,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import packages from '../data/services.json';
 import { whatsappLink } from './whatsapp';
+import { swipeHandlers } from './swipe';
 import './Services.css';
 
 const GAP = 20; // px entre cards
 const MIN_TWO_CARDS = 700; // ancho mínimo del contenedor para mostrar 2 cards
 
 const categories = [...new Set(packages.map((p) => p.category))];
+const priceValue = (p) => Number(String(p.price).replace(/[^\d.]/g, '')) || 0;
+// Cada categoría ordenada de menor a mayor precio
 const grouped = Object.fromEntries(
-  categories.map((cat) => [cat, packages.filter((p) => p.category === cat)])
+  categories.map((cat) => [
+    cat,
+    packages.filter((p) => p.category === cat).sort((a, b) => priceValue(a) - priceValue(b)),
+  ])
 );
 
 /* ── Category Tabs ── */
@@ -146,7 +152,7 @@ function PackageCarousel({ pkgs, category }) {
       </div>
 
       {/* Track con overflow oculto → altura fija */}
-      <div className="svc-carousel__wrap" ref={wrapRef}>
+      <div className="svc-carousel__wrap" ref={wrapRef} {...swipeHandlers(prev, next)}>
         <div
           className="svc-carousel__track"
           style={{

@@ -109,6 +109,7 @@
 /* Wrap — overflow hidden; padding vertical para que el hover/sombra no se recorten */
 .svc-carousel__wrap {
   overflow: hidden;
+  touch-action: pan-y;
   padding: 8px 0 14px;
   margin: -8px 0 -14px;
 }

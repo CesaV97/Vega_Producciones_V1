@@ -82,6 +82,7 @@
 /* ── Track ───────────────────────────────────── */
 .lcarousel__wrap {
   overflow: hidden;
+  touch-action: pan-y;
   /* fade-out edges izquierda y derecha */
   -webkit-mask-image: linear-gradient(
     to right,

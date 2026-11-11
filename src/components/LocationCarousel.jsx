@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { swipeHandlers } from './swipe';
 import './LocationCarousel.css';
 
 const GAP = 20; // px entre tarjetas
@@ -65,7 +66,7 @@ export default function LocationCarousel({ title, icon, locations, onSelect }) {
       </div>
 
       {/* track */}
-      <div className="lcarousel__wrap" ref={wrapRef}>
+      <div className="lcarousel__wrap" ref={wrapRef} {...swipeHandlers(prev, next)}>
         <div
           className="lcarousel__track"
           ref={trackRef}
