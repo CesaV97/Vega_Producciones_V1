@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, Instagram, Facebook, Youtube } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 import { whatsappLink } from './whatsapp';
 import './Contact.css';
@@ -8,6 +8,7 @@ import './Contact.css';
 const links = [
   { icon: <Instagram size={22} />, label: 'Instagram', href: 'https://www.instagram.com/vegaproducciones_oficial?xtok=MXRkaGs1ZGZkNTByZw%3D%3D', external: true },
   { icon: <Facebook size={22} />,  label: 'Facebook',  href: 'https://www.facebook.com/share/1DvqYFjxjK/',  external: true },
+  { icon: <Youtube size={22} />,   label: 'YouTube',   href: 'https://www.youtube.com/@ProduccionesVega1', external: true },
   { icon: <Phone size={22} />,     label: '81 8079 0057', href: 'tel:+528180790057' },
   { icon: <Phone size={22} />,     label: '81 1004 6160', href: 'tel:+528110046160' },
   { icon: <Mail size={22} />,      label: 'Email',     href: 'mailto:info@produccionesvega.net' },
