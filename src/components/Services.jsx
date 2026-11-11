@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import packages from '../data/services.json';
+import { whatsappLink } from './whatsapp';
 import './Services.css';
 
 const GAP = 20; // px entre cards
@@ -42,6 +43,10 @@ function CategoryTabs({ categories, active, onChange }) {
   );
 }
 
+/* Mensaje prellenado para cotizar el paquete por WhatsApp */
+const quoteMessage = (pkg) =>
+  `Hola, me gustaría cotizar el paquete ${pkg.name} de ${pkg.category}.`;
+
 /* ── Package Card ── */
 function PkgCard({ pkg }) {
   const attrEntries = Object.entries(pkg.attributes || {}).filter(
@@ -70,7 +75,14 @@ function PkgCard({ pkg }) {
       <div className="svc-card__bottom">
         <div className="svc-card__price-wrap">                    
         </div>
-        <a href="#contact" className="svc-card__cta"> Más información </a>
+        <a
+          href={whatsappLink(quoteMessage(pkg))}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="svc-card__cta"
+        >
+          Cotizar
+        </a>
       </div>
       </ul>
     </div>
